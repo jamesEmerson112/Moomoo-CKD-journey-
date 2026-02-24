@@ -1,0 +1,117 @@
+{
+  "entries": [
+    {
+      "id": "daily-2026-02-16-behavior-rr-pattern",
+      "date": "2026-02-16",
+      "title": "Dash pattern and stress-linked RR spikes",
+      "notes": "Observed dash-to-rest behavior after bathroom and water visits. Respiratory rate rose to about 40-44 after exertion and settled toward 36 with rest; sleeping baseline in nearby windows was around 28-32. Pattern looked stress/exertion-linked rather than persistent respiratory decline.",
+      "tags": [
+        "daily-log",
+        "respiratory",
+        "stress-response",
+        "behavior"
+      ],
+      "createdAt": "2026-02-16T09:00:00.000Z",
+      "updatedAt": "2026-02-16T20:00:00.000Z"
+    },
+    {
+      "id": "daily-2026-02-17-storm-stress-litter-lingering",
+      "date": "2026-02-17",
+      "title": "Storm stress, tremors, and litter-box lingering",
+      "notes": "Significant overnight storm stress with repeated litter-box visits and crouched lingering posture. Morning RR was around 32-36, then rose to about 40 after fluid session with tremors and less rhythmic breathing, later easing back during sleep. Drooling and nausea cues persisted later in day.",
+      "tags": [
+        "daily-log",
+        "stress-response",
+        "tremor",
+        "litter-box",
+        "fluids"
+      ],
+      "createdAt": "2026-02-17T09:00:00.000Z",
+      "updatedAt": "2026-02-17T21:00:00.000Z"
+    },
+    {
+      "id": "daily-2026-02-18-am-stable-window",
+      "date": "2026-02-18",
+      "title": "Morning stable window with mild oral signal",
+      "notes": "Morning snapshot was relatively stable with sleeping/rest RR around 28-32 and overnight urination about three times. No active drooling but thick saliva and one faint blood-tinged saliva episode were noted, then resolved. Activity remained low-energy but engaged outdoors.",
+      "tags": [
+        "daily-log",
+        "stability-window",
+        "oral-signs",
+        "respiratory"
+      ],
+      "createdAt": "2026-02-18T09:00:00.000Z",
+      "updatedAt": "2026-02-18T12:00:00.000Z"
+    },
+    {
+      "id": "daily-2026-02-18-pm-post-fluid-withdrawal",
+      "date": "2026-02-18",
+      "title": "Post-fluid withdrawal and decompression",
+      "notes": "After daily fluids, she retreated and avoided interaction, consistent with treatment aversion/decompression behavior. Following uninterrupted nap, RR returned around 32-36. Eating continued in the broader day window despite handling sensitivity and intermittent touch reactivity.",
+      "tags": [
+        "daily-log",
+        "fluids",
+        "decompression",
+        "behavior"
+      ],
+      "createdAt": "2026-02-18T14:00:00.000Z",
+      "updatedAt": "2026-02-18T18:00:00.000Z"
+    },
+    {
+      "id": "daily-2026-02-21-good-window-kibble-avoidance",
+      "date": "2026-02-21",
+      "title": "Good window with persistent oral-eating friction",
+      "notes": "Relative good window: sleeping RR around 20-24, calm behavior, grooming, and ongoing food intake. Kibble interest existed but tolerance remained poor, suggesting oral discomfort; soupy food was better tolerated. Morning nausea pill was refused/spit at least once.",
+      "tags": [
+        "daily-log",
+        "good-window",
+        "oral-discomfort",
+        "medication-adherence"
+      ],
+      "createdAt": "2026-02-21T16:00:00.000Z",
+      "updatedAt": "2026-02-21T21:00:00.000Z"
+    },
+    {
+      "id": "daily-2026-02-22-cachexia-emotional-window",
+      "date": "2026-02-22",
+      "title": "Cachexia concern and nighttime restlessness",
+      "notes": "Overnight check emphasized severe thin body condition and emotional concern; weight was about 5.98 lb. Kibble remained difficult while soft/soupy food strategy continued. This reflected ongoing catabolic burden despite preserved interest in intake opportunities.",
+      "tags": [
+        "daily-log",
+        "weight",
+        "cachexia",
+        "nutrition"
+      ],
+      "createdAt": "2026-02-22T01:30:00.000Z",
+      "updatedAt": "2026-02-22T10:00:00.000Z"
+    },
+    {
+      "id": "daily-2026-02-24-am-tongue-gum-clarification",
+      "date": "2026-02-24",
+      "title": "Tongue-use concern with gum-bleeding clarification",
+      "notes": "Morning observation: strong hunger/thirst approach behavior but reduced tongue-use during attempts to eat/drink. Faint blood was seen then resolved. Follow-up context suggests some blood likely originated from fragile gums, including light bleeding during routine tooth-brushing, while oral discomfort remained clinically relevant.",
+      "tags": [
+        "daily-log",
+        "oral-discomfort",
+        "gum-bleeding",
+        "tongue-function"
+      ],
+      "createdAt": "2026-02-24T08:00:00.000Z",
+      "updatedAt": "2026-02-24T11:00:00.000Z"
+    },
+    {
+      "id": "daily-2026-02-24-pool-right-leg-redness",
+      "date": "2026-02-24",
+      "title": "Pool incident with transient right-leg redness",
+      "notes": "After a brief pool fall/swim event, right leg skin appeared red to light-purple transiently. Later checks showed weight-bearing on both legs and similar light-pink paw-pad tone bilaterally, favoring localized irritation/minor trauma over severe perfusion failure. Continued short-interval observation planned.",
+      "tags": [
+        "daily-log",
+        "incident",
+        "skin-change",
+        "monitoring"
+      ],
+      "createdAt": "2026-02-24T12:00:00.000Z",
+      "updatedAt": "2026-02-24T13:30:00.000Z"
+    }
+  ]
+}

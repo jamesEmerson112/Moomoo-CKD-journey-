@@ -1,0 +1,613 @@
+{
+  "logs": [
+    {
+      "id": "log-2025-12-03",
+      "date": "2025-12-03",
+      "mode": "quick_text",
+      "notes": "Major renal-proteinuria crisis documented. Albumin about 1.6 and total protein about 4.0 with UPC around 7.9, suggesting protein-losing nephropathy. BUN around 69, creatinine around 2.4, SDMA around 21, phosphorus around 8.1. HCT around 27 and hemoglobin around 8.3. Mild nausea and appetite reduction were reported.",
+      "medications": [
+        {
+          "name": "LRS SQ fluids",
+          "dose": "daily (started soon after)",
+          "taken": true
+        },
+        {
+          "name": "GI support meds",
+          "dose": "omeprazole/sucralfate (historical)",
+          "taken": true
+        }
+      ],
+      "weightLb": 6.9,
+      "createdBy": "CareTeam",
+      "createdAt": "2025-12-03T18:00:00.000Z",
+      "updatedAt": "2025-12-03T18:15:00.000Z"
+    },
+    {
+      "id": "log-2025-12-08",
+      "date": "2025-12-08",
+      "mode": "quick_text",
+      "notes": "Daily renal support fluids were established: LRS 50 mL SQ with B vitamins and potassium additive per plan. Ongoing concern for nausea, low appetite, and weight loss.",
+      "medications": [
+        {
+          "name": "LRS SQ fluids (+B vitamins + KCl)",
+          "dose": "50 mL daily",
+          "taken": true
+        },
+        {
+          "name": "Ondansetron",
+          "dose": "as directed (historical)",
+          "taken": true
+        }
+      ],
+      "weightLb": 6.8,
+      "createdBy": "CareTeam",
+      "createdAt": "2025-12-08T18:00:00.000Z",
+      "updatedAt": "2025-12-08T18:10:00.000Z"
+    },
+    {
+      "id": "log-2025-12-15",
+      "date": "2025-12-15",
+      "mode": "quick_text",
+      "notes": "Recheck showed progression with BUN around 72, creatinine around 3.8, and potassium around 6.1. Appetite remained variable with soft stool and ongoing nausea concerns.",
+      "medications": [
+        {
+          "name": "Ondansetron",
+          "dose": "anti-nausea protocol",
+          "taken": true
+        },
+        {
+          "name": "Maropitant (Cerenia)",
+          "dose": "antiemetic protocol",
+          "taken": true
+        },
+        {
+          "name": "LRS SQ fluids (+B vitamins + KCl)",
+          "dose": "50 mL daily",
+          "taken": true
+        }
+      ],
+      "weightLb": 6.7,
+      "createdBy": "CareTeam",
+      "createdAt": "2025-12-15T18:00:00.000Z",
+      "updatedAt": "2025-12-15T18:10:00.000Z"
+    },
+    {
+      "id": "log-2025-12-24",
+      "date": "2025-12-24",
+      "mode": "quick_text",
+      "notes": "Follow-up anchor point around 6.5 lb. FeLV/FIV negative and T4 around 1.2 in prior workup period. Continued renal decline pattern with low appetite and fatigue episodes.",
+      "medications": [
+        {
+          "name": "LRS SQ fluids (+B vitamins + KCl)",
+          "dose": "50 mL daily",
+          "taken": true
+        },
+        {
+          "name": "Renal diet + binder strategy",
+          "dose": "ongoing",
+          "taken": true
+        }
+      ],
+      "weightLb": 6.5,
+      "createdBy": "CareTeam",
+      "createdAt": "2025-12-24T18:00:00.000Z",
+      "updatedAt": "2025-12-24T18:10:00.000Z"
+    },
+    {
+      "id": "log-2026-01-16",
+      "date": "2026-01-16",
+      "mode": "quick_text",
+      "notes": "Major deterioration documented. Weight near 5.8 lb. CBC severe anemia pattern with HCT about 17 and poor regeneration suspicion. Albumin about 1.8, BUN about 110, creatinine about 5.6, phosphorus about 10.7, SDMA about 26. Clinical signs included low appetite, lethargy, nausea risk, and cachexia progression.",
+      "medications": [
+        {
+          "name": "LRS SQ fluids (+B vitamins + KCl)",
+          "dose": "50 mL daily",
+          "taken": true
+        },
+        {
+          "name": "Antiemetics",
+          "dose": "ondansetron/cerenia as directed",
+          "taken": true
+        },
+        {
+          "name": "Epakitin",
+          "dose": "binder support",
+          "taken": true
+        }
+      ],
+      "weightLb": 5.8,
+      "createdBy": "CareTeam",
+      "createdAt": "2026-01-16T18:00:00.000Z",
+      "updatedAt": "2026-01-16T18:20:00.000Z"
+    },
+    {
+      "id": "log-2026-01-31",
+      "date": "2026-01-31",
+      "mode": "quick_text",
+      "notes": "ER anchor: BUN 121, creatinine 5.6, phosphorus over 15, albumin 1.6, PCV/HCT around 14. Exam described very thin body condition, mild dehydration, murmur with gallop rhythm, and GI fragility. Severe kidney dysfunction and anemia remained central concerns.",
+      "medications": [
+        {
+          "name": "LRS SQ fluids (+B vitamins + KCl)",
+          "dose": "50 mL daily",
+          "taken": true
+        },
+        {
+          "name": "Phosphate binder",
+          "dose": "ongoing",
+          "taken": true
+        },
+        {
+          "name": "Antiemetics",
+          "dose": "ondansetron/cerenia",
+          "taken": true
+        }
+      ],
+      "weightLb": 5.5,
+      "createdBy": "CareTeam",
+      "createdAt": "2026-01-31T20:00:00.000Z",
+      "updatedAt": "2026-01-31T20:15:00.000Z"
+    },
+    {
+      "id": "log-2026-02-01",
+      "date": "2026-02-01",
+      "mode": "quick_text",
+      "notes": "Home treatment phase intensified with prednisolone start and molidustat anemia support. Appetite remained fragile with intermittent nausea and low energy, but a short comfort window was anticipated with combined symptom control.",
+      "medications": [
+        {
+          "name": "Prednisolone",
+          "dose": "0.15 mL (20 mg/mL)",
+          "taken": true
+        },
+        {
+          "name": "Ondansetron",
+          "dose": "2 mg",
+          "taken": true
+        },
+        {
+          "name": "Maropitant (Cerenia)",
+          "dose": "4 mg",
+          "taken": true
+        },
+        {
+          "name": "Varenzin-CA1 (molidustat)",
+          "dose": "0.6 mL (15 mg)",
+          "taken": true
+        },
+        {
+          "name": "Epakitin",
+          "dose": "1 scoop",
+          "taken": true
+        },
+        {
+          "name": "LRS SQ fluids (+B vitamins + KCl)",
+          "dose": "50 mL",
+          "taken": true
+        }
+      ],
+      "weightLb": 5.45,
+      "createdBy": "CareTeam",
+      "createdAt": "2026-02-01T20:00:00.000Z",
+      "updatedAt": "2026-02-01T20:20:00.000Z"
+    },
+    {
+      "id": "log-2026-02-03",
+      "date": "2026-02-03",
+      "mode": "quick_text",
+      "notes": "Early steroid-course period had watery diarrhea and nausea fluctuations. Appetite stayed low, energy was low, and hydration support remained essential. Urine testing around this window reportedly showed no infection.",
+      "medications": [
+        {
+          "name": "Prednisolone",
+          "dose": "0.15 mL (20 mg/mL)",
+          "taken": true
+        },
+        {
+          "name": "Ondansetron",
+          "dose": "2 mg",
+          "taken": true
+        },
+        {
+          "name": "Maropitant (Cerenia)",
+          "dose": "4 mg",
+          "taken": true
+        },
+        {
+          "name": "Varenzin-CA1 (molidustat)",
+          "dose": "0.6 mL (15 mg)",
+          "taken": true
+        },
+        {
+          "name": "Epakitin",
+          "dose": "1 scoop",
+          "taken": true
+        },
+        {
+          "name": "LRS SQ fluids (+B vitamins + KCl)",
+          "dose": "50 mL",
+          "taken": true
+        }
+      ],
+      "weightLb": 5.4,
+      "createdBy": "CareTeam",
+      "createdAt": "2026-02-03T20:00:00.000Z",
+      "updatedAt": "2026-02-03T20:12:00.000Z"
+    },
+    {
+      "id": "log-2026-02-05",
+      "date": "2026-02-05",
+      "mode": "quick_text",
+      "notes": "Comfort window observed with better walking, improved social behavior, and increased cuddling overnight. Appetite still reduced compared with baseline, with ongoing fatigue and nausea risk.",
+      "medications": [
+        {
+          "name": "Prednisolone",
+          "dose": "0.15 mL (20 mg/mL)",
+          "taken": true
+        },
+        {
+          "name": "Ondansetron",
+          "dose": "2 mg",
+          "taken": true
+        },
+        {
+          "name": "Maropitant (Cerenia)",
+          "dose": "4 mg",
+          "taken": true
+        },
+        {
+          "name": "Varenzin-CA1 (molidustat)",
+          "dose": "0.6 mL (15 mg)",
+          "taken": true
+        },
+        {
+          "name": "Epakitin",
+          "dose": "1 scoop",
+          "taken": true
+        },
+        {
+          "name": "LRS SQ fluids (+B vitamins + KCl)",
+          "dose": "50 mL",
+          "taken": true
+        }
+      ],
+      "weightLb": 5.42,
+      "createdBy": "CareTeam",
+      "createdAt": "2026-02-05T20:00:00.000Z",
+      "updatedAt": "2026-02-05T20:10:00.000Z"
+    },
+    {
+      "id": "log-2026-02-08",
+      "date": "2026-02-08",
+      "mode": "quick_text",
+      "notes": "Behavior pattern included dashing to water and litter with stress-driven respiratory spikes after handling. During quiet rest windows respiratory effort eased. Appetite remained low and lethargy was intermittent.",
+      "medications": [
+        {
+          "name": "Prednisolone",
+          "dose": "0.15 mL (20 mg/mL)",
+          "taken": true
+        },
+        {
+          "name": "Ondansetron",
+          "dose": "2 mg",
+          "taken": true
+        },
+        {
+          "name": "Maropitant (Cerenia)",
+          "dose": "4 mg",
+          "taken": true
+        },
+        {
+          "name": "Varenzin-CA1 (molidustat)",
+          "dose": "0.6 mL (15 mg)",
+          "taken": true
+        },
+        {
+          "name": "Epakitin",
+          "dose": "1 scoop",
+          "taken": true
+        },
+        {
+          "name": "LRS SQ fluids (+B vitamins + KCl)",
+          "dose": "50 mL",
+          "taken": true
+        }
+      ],
+      "weightLb": 5.46,
+      "createdBy": "CareTeam",
+      "createdAt": "2026-02-08T20:00:00.000Z",
+      "updatedAt": "2026-02-08T20:10:00.000Z"
+    },
+    {
+      "id": "log-2026-02-10",
+      "date": "2026-02-10",
+      "mode": "quick_text",
+      "notes": "Sleep respiratory rate often normalized in better windows, while awake stress could still trigger higher rates. GI signs remained mixed with low appetite and mild nausea episodes.",
+      "medications": [
+        {
+          "name": "Prednisolone",
+          "dose": "0.15 mL (20 mg/mL)",
+          "taken": true
+        },
+        {
+          "name": "Ondansetron",
+          "dose": "2 mg",
+          "taken": true
+        },
+        {
+          "name": "Maropitant (Cerenia)",
+          "dose": "4 mg",
+          "taken": true
+        },
+        {
+          "name": "Varenzin-CA1 (molidustat)",
+          "dose": "0.6 mL (15 mg)",
+          "taken": true
+        },
+        {
+          "name": "Epakitin",
+          "dose": "1 scoop",
+          "taken": true
+        },
+        {
+          "name": "LRS SQ fluids (+B vitamins + KCl)",
+          "dose": "50 mL",
+          "taken": true
+        }
+      ],
+      "weightLb": 5.5,
+      "createdBy": "CareTeam",
+      "createdAt": "2026-02-10T20:00:00.000Z",
+      "updatedAt": "2026-02-10T20:10:00.000Z"
+    },
+    {
+      "id": "log-2026-02-12",
+      "date": "2026-02-12",
+      "mode": "quick_text",
+      "notes": "Blood-tinged saliva episode observed with concern for oral discomfort. Nausea signals and drool appeared intermittently. Appetite remained low and chewing tolerance looked reduced.",
+      "medications": [
+        {
+          "name": "Prednisolone",
+          "dose": "0.15 mL (20 mg/mL)",
+          "taken": true
+        },
+        {
+          "name": "Ondansetron",
+          "dose": "2 mg",
+          "taken": true
+        },
+        {
+          "name": "Maropitant (Cerenia)",
+          "dose": "4 mg",
+          "taken": true
+        },
+        {
+          "name": "Varenzin-CA1 (molidustat)",
+          "dose": "0.6 mL (15 mg)",
+          "taken": true
+        },
+        {
+          "name": "Epakitin",
+          "dose": "1 scoop",
+          "taken": true
+        },
+        {
+          "name": "LRS SQ fluids (+B vitamins + KCl)",
+          "dose": "50 mL",
+          "taken": true
+        }
+      ],
+      "weightLb": 5.55,
+      "createdBy": "CareTeam",
+      "createdAt": "2026-02-12T20:00:00.000Z",
+      "updatedAt": "2026-02-12T20:16:00.000Z"
+    },
+    {
+      "id": "log-2026-02-16",
+      "date": "2026-02-16",
+      "mode": "quick_text",
+      "notes": "Intermittent faint blood around lip and chin persisted. Appetite still low with selective eating. Lethargy and anxiety cycles continued but comfort improved with calm routine.",
+      "medications": [
+        {
+          "name": "Prednisolone",
+          "dose": "0.15 mL (20 mg/mL)",
+          "taken": true
+        },
+        {
+          "name": "Ondansetron",
+          "dose": "2 mg",
+          "taken": true
+        },
+        {
+          "name": "Maropitant (Cerenia)",
+          "dose": "4 mg",
+          "taken": true
+        },
+        {
+          "name": "Varenzin-CA1 (molidustat)",
+          "dose": "0.6 mL (15 mg)",
+          "taken": true
+        },
+        {
+          "name": "Epakitin",
+          "dose": "1 scoop",
+          "taken": true
+        },
+        {
+          "name": "LRS SQ fluids (+B vitamins + KCl)",
+          "dose": "50 mL",
+          "taken": true
+        }
+      ],
+      "weightLb": 5.7,
+      "createdBy": "CareTeam",
+      "createdAt": "2026-02-16T20:00:00.000Z",
+      "updatedAt": "2026-02-16T20:10:00.000Z"
+    },
+    {
+      "id": "log-2026-02-21",
+      "date": "2026-02-21",
+      "mode": "quick_text",
+      "notes": "Strong desire to eat but increasing kibble avoidance suggested oral pain with chewing. Soupy food tolerance was better. Pill administration became more difficult and nausea control remained important.",
+      "medications": [
+        {
+          "name": "Prednisolone",
+          "dose": "0.15 mL (20 mg/mL)",
+          "taken": true
+        },
+        {
+          "name": "Ondansetron",
+          "dose": "2 mg",
+          "taken": true
+        },
+        {
+          "name": "Maropitant (Cerenia)",
+          "dose": "4 mg",
+          "taken": true
+        },
+        {
+          "name": "Varenzin-CA1 (molidustat)",
+          "dose": "0.6 mL (15 mg)",
+          "taken": true
+        },
+        {
+          "name": "Epakitin",
+          "dose": "1 scoop",
+          "taken": true
+        },
+        {
+          "name": "LRS SQ fluids (+B vitamins + KCl)",
+          "dose": "50 mL",
+          "taken": true
+        }
+      ],
+      "weightLb": 5.88,
+      "createdBy": "CareTeam",
+      "createdAt": "2026-02-21T20:00:00.000Z",
+      "updatedAt": "2026-02-21T20:15:00.000Z"
+    },
+    {
+      "id": "log-2026-02-22",
+      "date": "2026-02-22",
+      "mode": "quick_text",
+      "notes": "Soupy wet food remained preferred while kibble chewing was limited. One anti-nausea pill refusal and spitting episode occurred. Energy was variable with periods of lethargy.",
+      "medications": [
+        {
+          "name": "Prednisolone",
+          "dose": "0.15 mL (20 mg/mL)",
+          "taken": true
+        },
+        {
+          "name": "Ondansetron",
+          "dose": "2 mg",
+          "taken": true
+        },
+        {
+          "name": "Maropitant (Cerenia)",
+          "dose": "4 mg",
+          "taken": true
+        },
+        {
+          "name": "Varenzin-CA1 (molidustat)",
+          "dose": "0.6 mL (15 mg)",
+          "taken": true
+        },
+        {
+          "name": "Epakitin",
+          "dose": "1 scoop",
+          "taken": true
+        },
+        {
+          "name": "LRS SQ fluids (+B vitamins + KCl)",
+          "dose": "50 mL",
+          "taken": true
+        }
+      ],
+      "weightLb": 5.92,
+      "createdBy": "CareTeam",
+      "createdAt": "2026-02-22T20:00:00.000Z",
+      "updatedAt": "2026-02-22T20:12:00.000Z"
+    },
+    {
+      "id": "log-2026-02-23",
+      "date": "2026-02-23",
+      "mode": "quick_text",
+      "notes": "Low appetite and low energy continued with intermittent nausea. Respiratory spikes remained mostly stress-associated while resting periods were calmer. Hydration support and binder remained consistent.",
+      "medications": [
+        {
+          "name": "Prednisolone",
+          "dose": "0.15 mL (20 mg/mL)",
+          "taken": true
+        },
+        {
+          "name": "Ondansetron",
+          "dose": "2 mg",
+          "taken": true
+        },
+        {
+          "name": "Maropitant (Cerenia)",
+          "dose": "4 mg",
+          "taken": true
+        },
+        {
+          "name": "Varenzin-CA1 (molidustat)",
+          "dose": "0.6 mL (15 mg)",
+          "taken": true
+        },
+        {
+          "name": "Epakitin",
+          "dose": "1 scoop",
+          "taken": true
+        },
+        {
+          "name": "LRS SQ fluids (+B vitamins + KCl)",
+          "dose": "50 mL",
+          "taken": true
+        }
+      ],
+      "weightLb": 5.96,
+      "createdBy": "CareTeam",
+      "createdAt": "2026-02-23T20:00:00.000Z",
+      "updatedAt": "2026-02-23T20:10:00.000Z"
+    },
+    {
+      "id": "log-2026-02-24",
+      "date": "2026-02-24",
+      "mode": "quick_text",
+      "notes": "Late-Feb status: hunger and thirst signals remained present but reduced tongue use suggested oral discomfort. Intermittent faint oral blood is now thought to be at least partly gingival bleeding during oral care/brush contact despite pale gums. Oral discomfort remained active due to kibble avoidance and pill intolerance episodes. Weight remained around 5.98 lb.",
+      "medications": [
+        {
+          "name": "Prednisolone",
+          "dose": "0.15 mL (20 mg/mL)",
+          "taken": true
+        },
+        {
+          "name": "Ondansetron",
+          "dose": "2 mg",
+          "taken": true
+        },
+        {
+          "name": "Maropitant (Cerenia)",
+          "dose": "4 mg",
+          "taken": true
+        },
+        {
+          "name": "Varenzin-CA1 (molidustat)",
+          "dose": "0.6 mL (15 mg)",
+          "taken": true
+        },
+        {
+          "name": "Epakitin",
+          "dose": "1 scoop",
+          "taken": true
+        },
+        {
+          "name": "LRS SQ fluids (+B vitamins + KCl)",
+          "dose": "50 mL",
+          "taken": true
+        }
+      ],
+      "weightLb": 5.98,
+      "createdBy": "CareTeam",
+      "createdAt": "2026-02-24T20:00:00.000Z",
+      "updatedAt": "2026-02-24T22:00:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "terms": [
+    { "id": "term-low-appetite-1", "issueKey": "low-appetite", "label": "Low Appetite", "phrase": "low appetite", "weight": 1.2, "isActive": true },
+    { "id": "term-low-appetite-2", "issueKey": "low-appetite", "label": "Low Appetite", "phrase": "reduced appetite", "weight": 1.1, "isActive": true },
+    { "id": "term-vomiting-1", "issueKey": "vomiting", "label": "Vomiting", "phrase": "vomiting", "weight": 1.5, "isActive": true },
+    { "id": "term-vomiting-2", "issueKey": "vomiting", "label": "Vomiting", "phrase": "throwing up", "weight": 1.6, "isActive": true },
+    { "id": "term-lethargy-1", "issueKey": "lethargy", "label": "Lethargy", "phrase": "lethargic", "weight": 1.4, "isActive": true },
+    { "id": "term-lethargy-2", "issueKey": "lethargy", "label": "Lethargy", "phrase": "low energy", "weight": 1.3, "isActive": true },
+    { "id": "term-dehydration-1", "issueKey": "dehydration-risk", "label": "Dehydration Risk", "phrase": "dehydrated", "weight": 1.6, "isActive": true },
+    { "id": "term-nausea-1", "issueKey": "nausea", "label": "Nausea", "phrase": "nausea", "weight": 1.2, "isActive": true }
+  ]
+}

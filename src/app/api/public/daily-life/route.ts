@@ -1,0 +1,14 @@
+import { NextRequest, NextResponse } from "next/server";
+
+import { listDailyLifeEntries } from "@/lib/data";
+import { dateRangeQuerySchema } from "@/lib/validation";
+
+export async function GET(req: NextRequest): Promise<NextResponse> {
+  const from = req.nextUrl.searchParams.get("from") ?? undefined;
+  const to = req.nextUrl.searchParams.get("to") ?? undefined;
+
+  const parsed = dateRangeQuerySchema.parse({ from, to });
+  const entries = await listDailyLifeEntries({ from: parsed.from, to: parsed.to, limit: 365 });
+
+  return NextResponse.json({ entries });
+}

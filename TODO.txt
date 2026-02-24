@@ -1,0 +1,2 @@
+1. Add multi language support
+2. Add medication regimen model (start/stop periods + dosage changes) instead of per-log repetition.

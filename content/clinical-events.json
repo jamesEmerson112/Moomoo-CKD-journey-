@@ -1,0 +1,389 @@
+{
+  "events": [
+    {
+      "id": "evt-2023-07-01-weight-anchor",
+      "date": "2023-07-01",
+      "category": "historical",
+      "title": "Historical annual weight anchor",
+      "summary": "Historical annual exam anchor reported around 8.2 lb.",
+      "source": "specialist_summary",
+      "confidence": "estimated",
+      "measurements": [
+        {
+          "key": "weight-lb",
+          "label": "Body Weight",
+          "value": 8.2,
+          "unit": "lb",
+          "comparator": "approx",
+          "confidence": "estimated",
+          "note": "Annual anchor"
+        }
+      ]
+    },
+    {
+      "id": "evt-2025-09-01-weight-anchor",
+      "date": "2025-09-01",
+      "category": "historical",
+      "title": "Historical annual weight anchor",
+      "summary": "Historical annual exam anchor reported around 7.8 lb.",
+      "source": "specialist_summary",
+      "confidence": "estimated",
+      "measurements": [
+        {
+          "key": "weight-lb",
+          "label": "Body Weight",
+          "value": 7.8,
+          "unit": "lb",
+          "comparator": "approx",
+          "confidence": "estimated",
+          "note": "Annual anchor"
+        }
+      ]
+    },
+    {
+      "id": "evt-2025-12-03-lab-crisis",
+      "date": "2025-12-03",
+      "category": "lab",
+      "title": "Initial high-risk renal and proteinuria panel",
+      "summary": "Panel showed severe protein loss with azotemia and anemia trend, consistent with protein-losing nephropathy concern.",
+      "source": "specialist_summary",
+      "confidence": "confirmed",
+      "measurements": [
+        {
+          "key": "albumin",
+          "label": "Albumin",
+          "value": 1.6,
+          "unit": "g/dL",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "total-protein",
+          "label": "Total Protein",
+          "value": 4,
+          "unit": "g/dL",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "bun",
+          "label": "BUN",
+          "value": 69,
+          "unit": "mg/dL",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "creatinine",
+          "label": "Creatinine",
+          "value": 2.4,
+          "unit": "mg/dL",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "sdma",
+          "label": "SDMA",
+          "value": 21,
+          "unit": "ug/dL",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "phosphorus",
+          "label": "Phosphorus",
+          "value": 8.1,
+          "unit": "mg/dL",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "hct",
+          "label": "Hematocrit",
+          "value": 27,
+          "unit": "%",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "hemoglobin",
+          "label": "Hemoglobin",
+          "value": 8.3,
+          "unit": "g/dL",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "upc",
+          "label": "Urine Protein:Creatinine Ratio",
+          "value": 7.9,
+          "unit": null,
+          "comparator": "approx",
+          "confidence": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "evt-2025-12-15-recheck",
+      "date": "2025-12-15",
+      "category": "lab",
+      "title": "Renal progression recheck",
+      "summary": "Follow-up data showed worsening azotemia and hyperkalemia trend with persistent appetite and GI instability.",
+      "source": "specialist_summary",
+      "confidence": "confirmed",
+      "measurements": [
+        {
+          "key": "bun",
+          "label": "BUN",
+          "value": 72,
+          "unit": "mg/dL",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "creatinine",
+          "label": "Creatinine",
+          "value": 3.8,
+          "unit": "mg/dL",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "potassium",
+          "label": "Potassium",
+          "value": 6.1,
+          "unit": "mmol/L",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "evt-2025-12-24-infectious-thyroid-screen",
+      "date": "2025-12-24",
+      "category": "lab",
+      "title": "Infectious and thyroid screen anchors",
+      "summary": "FeLV and FIV reported negative with T4 around 1.2 in supporting workup notes.",
+      "source": "specialist_summary",
+      "confidence": "confirmed",
+      "measurements": [
+        {
+          "key": "t4",
+          "label": "Total T4",
+          "value": 1.2,
+          "unit": "ug/dL",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "evt-2026-01-16-major-deterioration",
+      "date": "2026-01-16",
+      "category": "lab",
+      "title": "Major deterioration panel",
+      "summary": "Advanced kidney values and severe anemia pattern were recorded with suspected poor regenerative response.",
+      "source": "specialist_summary",
+      "confidence": "confirmed",
+      "measurements": [
+        {
+          "key": "weight-lb",
+          "label": "Body Weight",
+          "value": 5.8,
+          "unit": "lb",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "hct",
+          "label": "Hematocrit",
+          "value": 17,
+          "unit": "%",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "hemoglobin",
+          "label": "Hemoglobin",
+          "value": 5.2,
+          "unit": "g/dL",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "albumin",
+          "label": "Albumin",
+          "value": 1.8,
+          "unit": "g/dL",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "bun",
+          "label": "BUN",
+          "value": 110,
+          "unit": "mg/dL",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "creatinine",
+          "label": "Creatinine",
+          "value": 5.6,
+          "unit": "mg/dL",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "phosphorus",
+          "label": "Phosphorus",
+          "value": 10.7,
+          "unit": "mg/dL",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "sdma",
+          "label": "SDMA",
+          "value": 26,
+          "unit": "ug/dL",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "evt-2026-01-31-er-anchor",
+      "date": "2026-01-31",
+      "category": "er",
+      "title": "ER severe-status anchor",
+      "summary": "ER findings captured profound azotemia, severe hyperphosphatemia, severe anemia, and exam concern for murmur with gallop.",
+      "source": "specialist_summary",
+      "confidence": "confirmed",
+      "measurements": [
+        {
+          "key": "weight-lb",
+          "label": "Body Weight",
+          "value": 5.5,
+          "unit": "lb",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "bun",
+          "label": "BUN",
+          "value": 121,
+          "unit": "mg/dL",
+          "comparator": "exact",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "creatinine",
+          "label": "Creatinine",
+          "value": 5.6,
+          "unit": "mg/dL",
+          "comparator": "exact",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "phosphorus",
+          "label": "Phosphorus",
+          "value": 15,
+          "unit": "mg/dL",
+          "comparator": "gt",
+          "confidence": "confirmed",
+          "note": "Reported as greater than 15"
+        },
+        {
+          "key": "albumin",
+          "label": "Albumin",
+          "value": 1.6,
+          "unit": "g/dL",
+          "comparator": "exact",
+          "confidence": "confirmed"
+        },
+        {
+          "key": "pcv",
+          "label": "Packed Cell Volume",
+          "value": 14,
+          "unit": "%",
+          "comparator": "approx",
+          "confidence": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "evt-2026-02-01-treatment-intensification",
+      "date": "2026-02-01",
+      "category": "treatment_plan",
+      "title": "Intensified home-treatment phase",
+      "summary": "Prednisolone and molidustat support entered active home use with ongoing antiemetics, binder, and daily fluids.",
+      "source": "home_log",
+      "confidence": "caregiver_report"
+    },
+    {
+      "id": "evt-2026-02-03-gi-flare-urine-note",
+      "date": "2026-02-03",
+      "category": "home_observation",
+      "title": "Early-Feb GI flare with urine check note",
+      "summary": "Watery diarrhea and nausea fluctuation were noted during early steroid days; urine testing was reported without infection.",
+      "source": "home_log",
+      "confidence": "caregiver_report"
+    },
+    {
+      "id": "evt-2026-02-12-oral-bleeding-episode",
+      "date": "2026-02-12",
+      "category": "home_observation",
+      "title": "Blood-tinged saliva episode",
+      "summary": "Intermittent blood-tinged drool/saliva was observed and oral discomfort concern increased.",
+      "source": "home_log",
+      "confidence": "caregiver_report"
+    },
+    {
+      "id": "evt-2026-02-21-kibble-avoidance-pattern",
+      "date": "2026-02-21",
+      "category": "home_observation",
+      "title": "Kibble avoidance despite hunger",
+      "summary": "Strong hunger cues persisted but chewing tolerance declined, with better acceptance of soupy food textures.",
+      "source": "home_log",
+      "confidence": "caregiver_report"
+    },
+    {
+      "id": "evt-2026-02-24-gum-bleeding-clarification",
+      "date": "2026-02-24",
+      "category": "home_observation",
+      "title": "Oral blood source clarification toward gingival bleeding",
+      "summary": "Follow-up context indicated faint mouth blood may originate from fragile gums, including light bleeding seen during routine oral brushing, while oral discomfort persisted.",
+      "source": "home_log",
+      "confidence": "caregiver_report"
+    },
+    {
+      "id": "evt-2026-02-24-pool-incident-right-leg-redness",
+      "date": "2026-02-24",
+      "category": "home_observation",
+      "title": "Pool incident with transient right-leg discoloration",
+      "summary": "After brief pool exposure, transient right-leg redness/light-purple tone was observed; later bilateral weight-bearing and symmetric paw-pad color were reassuring.",
+      "source": "home_log",
+      "confidence": "caregiver_report"
+    },
+    {
+      "id": "evt-2026-02-24-tongue-function-concern",
+      "date": "2026-02-24",
+      "category": "home_observation",
+      "title": "Tongue-use concern with oral discomfort",
+      "summary": "Late-Feb status included reduced tongue use with intermittent blood-tinged saliva and ongoing appetite fragility.",
+      "source": "home_log",
+      "confidence": "caregiver_report",
+      "measurements": [
+        {
+          "key": "weight-lb",
+          "label": "Body Weight",
+          "value": 5.98,
+          "unit": "lb",
+          "comparator": "approx",
+          "confidence": "caregiver_report"
+        }
+      ]
+    }
+  ]
+}

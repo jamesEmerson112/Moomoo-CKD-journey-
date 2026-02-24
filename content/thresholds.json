@@ -1,0 +1,11 @@
+{
+  "thresholds": {
+    "waterIntakeMinOz": 12,
+    "appetiteMin": 2,
+    "energyMin": 2,
+    "vomitingMax": 1,
+    "urinationMin": 1,
+    "stoolMin": 1,
+    "weightLossPctWarn": 5
+  }
+}
