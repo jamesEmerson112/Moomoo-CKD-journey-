@@ -101,12 +101,12 @@ export function Box01FullwidthZoneChart({ payload }: Box01FullwidthZoneChartProp
             <Tooltip content={<Box01Tooltip />} />
             <Legend wrapperStyle={{ fontSize: 11, paddingTop: 4 }} />
             <Line
-              type="linear"
+              type="monotone"
               dataKey="weightLb"
               connectNulls={true}
               stroke="#1d4ed8"
               strokeWidth={2}
-              dot={{ r: 2.8, stroke: "#ffffff", strokeWidth: 1 }}
+              dot={{ r: 2.5, fill: "#1d4ed8", stroke: "#1d4ed8", strokeWidth: 0 }}
               activeDot={{ r: 4 }}
               name="Weight (lb)"
             />
