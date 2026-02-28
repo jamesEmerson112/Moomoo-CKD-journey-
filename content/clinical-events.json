@@ -349,6 +349,25 @@
       "confidence": "caregiver_report"
     },
     {
+      "id": "evt-2026-02-23-oral-discomfort-intake-stop-onset",
+      "date": "2026-02-23",
+      "category": "home_observation",
+      "title": "Oral discomfort and intake-stop behavior onset",
+      "summary": "Oral discomfort and stopping-eating behavior were first identified as active concerns on this date.",
+      "source": "home_log",
+      "confidence": "caregiver_report",
+      "measurements": [
+        {
+          "key": "weight-lb",
+          "label": "Body Weight",
+          "value": 5.96,
+          "unit": "lb",
+          "comparator": "approx",
+          "confidence": "caregiver_report"
+        }
+      ]
+    },
+    {
       "id": "evt-2026-02-24-gum-bleeding-clarification",
       "date": "2026-02-24",
       "category": "home_observation",
@@ -381,6 +400,25 @@
           "value": 5.98,
           "unit": "lb",
           "comparator": "approx",
+          "confidence": "caregiver_report"
+        }
+      ]
+    },
+    {
+      "id": "evt-2026-02-25-severe-oral-ulcer-crisis-eol-decision",
+      "date": "2026-02-25",
+      "category": "home_observation",
+      "title": "Severe oral-ulcer pain and end-of-life decision",
+      "summary": "Severe oral discomfort progressed with confirmed ulcers and painful intake; comfort-focused euthanasia was scheduled for the following morning.",
+      "source": "home_log",
+      "confidence": "caregiver_report",
+      "measurements": [
+        {
+          "key": "weight-lb",
+          "label": "Body Weight",
+          "value": 5,
+          "unit": "lb",
+          "comparator": "exact",
           "confidence": "caregiver_report"
         }
       ]

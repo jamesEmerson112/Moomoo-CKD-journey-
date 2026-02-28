@@ -1,6 +1,198 @@
 {
   "entries": [
     {
+      "id": "daily-from-log-2021-06-01",
+      "date": "2021-06-01",
+      "title": "Kittenhood baseline context",
+      "notes": "Kittenhood baseline context: recurrent upper-respiratory signs and GI parasite history (Giardia and Cryptosporidium), treated during early life. Historical context entry, not an acute deterioration day.",
+      "tags": [
+        "daily-log",
+        "backfilled"
+      ],
+      "createdAt": "2021-06-01T12:00:00.000Z",
+      "updatedAt": "2021-06-01T12:10:00.000Z"
+    },
+    {
+      "id": "daily-from-log-2023-07-05",
+      "date": "2023-07-05",
+      "title": "Annual baseline",
+      "notes": "Annual baseline. Weight about 8.2 lb, hydrated, and no major vomiting or drinking changes reported. Mild dental disease, congenital digit/nail deformities, and retinal lesions were noted. Platelet clumping comment present on CBC.",
+      "tags": [
+        "daily-log",
+        "backfilled"
+      ],
+      "createdAt": "2023-07-05T16:00:00.000Z",
+      "updatedAt": "2023-07-05T16:10:00.000Z"
+    },
+    {
+      "id": "daily-from-log-2024-06-25",
+      "date": "2024-06-25",
+      "title": "Annual follow-up",
+      "notes": "Annual follow-up. Urine was documented as inactive, and no major concerns were recorded at this visit.",
+      "tags": [
+        "daily-log",
+        "backfilled"
+      ],
+      "createdAt": "2024-06-25T16:00:00.000Z",
+      "updatedAt": "2024-06-25T16:10:00.000Z"
+    },
+    {
+      "id": "daily-from-log-2025-09-08",
+      "date": "2025-09-08",
+      "title": "Annual exam baseline before crisis period",
+      "notes": "Annual exam baseline before crisis period. Weight about 7.8 lb, apparently healthy and hydrated. Congenital findings reiterated, with mild gingivitis documented.",
+      "tags": [
+        "daily-log",
+        "backfilled"
+      ],
+      "createdAt": "2025-09-08T16:00:00.000Z",
+      "updatedAt": "2025-09-08T16:10:00.000Z"
+    },
+    {
+      "id": "daily-from-log-2025-12-03",
+      "date": "2025-12-03",
+      "title": "First major crash day in current renal crisis",
+      "notes": "First major crash day in current renal crisis. Trigger included vomiting with plastic noted in vomit or mouth, mild dehydration, and reported grade 3/6 systolic murmur. Labs showed severe protein-loss and renal concern pattern: total protein about 4.0, albumin about 1.6, BUN about 69, creatinine about 2.4, SDMA about 21, phosphorus about 8.1, UPC about 7.9, plus anemia markers (HCT about 27, hemoglobin about 8.3).",
+      "tags": [
+        "daily-log",
+        "backfilled"
+      ],
+      "createdAt": "2025-12-03T18:00:00.000Z",
+      "updatedAt": "2025-12-03T18:20:00.000Z"
+    },
+    {
+      "id": "daily-from-log-2025-12-08",
+      "date": "2025-12-08",
+      "title": "Outpatient escalation",
+      "notes": "Outpatient escalation. Daily SQ fluids were started with labeled home plan: LRS 50 mL under skin each day with B vitamins and 20 mEq KCl additives. Supportive therapies included omeprazole, sucralfate, Mirataz, Clavamox, and iron dextran context. Differential discussion included renal disease with possible pyelonephritis and possible glomerulonephritis.",
+      "tags": [
+        "daily-log",
+        "backfilled"
+      ],
+      "createdAt": "2025-12-08T18:00:00.000Z",
+      "updatedAt": "2025-12-08T18:20:00.000Z"
+    },
+    {
+      "id": "daily-from-log-2025-12-15",
+      "date": "2025-12-15",
+      "title": "Recheck showed ongoing decline without clear improvement",
+      "notes": "Recheck showed ongoing decline without clear improvement. Appetite fluctuated with increased drinking, lip-licking, soft stool, stress poops, and persistent murmur. Point-of-care values included BUN about 72, creatinine about 3.8, potassium about 6.1, and chloride about 129. Plan included discussion of gabapentin, ondansetron, and Cerenia for nausea and recommendation for urine culture recheck to evaluate pyelonephritis.",
+      "tags": [
+        "daily-log",
+        "backfilled"
+      ],
+      "createdAt": "2025-12-15T18:00:00.000Z",
+      "updatedAt": "2025-12-15T18:20:00.000Z"
+    },
+    {
+      "id": "daily-from-log-2025-12-24",
+      "date": "2025-12-24",
+      "title": "Recheck anchor",
+      "notes": "Recheck anchor: appetite improved relative to prior visit, herpes flare noted, diarrhea resolved, and murmur still present. Weight about 6.5 lb. Infectious and endocrine anchors in this period included FeLV/FIV negative and T4 about 1.2.",
+      "tags": [
+        "daily-log",
+        "backfilled"
+      ],
+      "createdAt": "2025-12-24T18:00:00.000Z",
+      "updatedAt": "2025-12-24T18:15:00.000Z"
+    },
+    {
+      "id": "daily-from-log-2026-01-16",
+      "date": "2026-01-16",
+      "title": "Marked January decline",
+      "notes": "Marked January decline. Weight about 5.8 lb with very low body condition, pale gums, and lethargic or weak behavior. UA showed poor concentrating ability (USG about 1.022), heavy protein (300+), and granular/waxy casts. CBC showed severe anemia pattern (HCT about 17, hemoglobin about 5.2, RBC about 3.2) with poor regenerative response concern. Chemistry remained severe: albumin about 1.8, BUN about 110, creatinine about 5.6, SDMA about 26, phosphorus about 10.7.",
+      "tags": [
+        "daily-log",
+        "backfilled"
+      ],
+      "createdAt": "2026-01-16T18:00:00.000Z",
+      "updatedAt": "2026-01-16T18:25:00.000Z"
+    },
+    {
+      "id": "daily-from-log-2026-01-31",
+      "date": "2026-01-31",
+      "title": "ER visit anchor",
+      "notes": "ER visit anchor. Home concern was labored breathing, though breathing was not labored on exam and lungs were clear on auscultation. Exam showed very thin condition (about 5.5 lb), mild dehydration, murmur plus gallop rhythm, slightly doughy intestines, and small bladder. Bloodwork remained severe: BUN 121, creatinine 5.6, phosphorus over 15, albumin 1.6, and PCV/HCT about 14. Transfusion was discussed but not performed; referral and guarded prognosis were documented.",
+      "tags": [
+        "daily-log",
+        "backfilled"
+      ],
+      "createdAt": "2026-01-31T20:00:00.000Z",
+      "updatedAt": "2026-01-31T20:20:00.000Z"
+    },
+    {
+      "id": "daily-from-log-2026-02-01",
+      "date": "2026-02-01",
+      "title": "Baseline specialist-style snapshot",
+      "notes": "Baseline specialist-style snapshot: rapidly progressive renal dysfunction with severe protein loss (UPC about 7.9), hypoalbuminemia (about 1.6 to 1.8), severe anemia (PCV/HCT about 14), and hyperphosphatemia (over 15). Cardiac context included murmur plus gallop rhythm. Support plan documented daily SQ fluids, antiemetics, phosphate binder/renal diet, and Varenzin-CA1 trial for anemia.",
+      "tags": [
+        "daily-log",
+        "backfilled"
+      ],
+      "createdAt": "2026-02-01T20:00:00.000Z",
+      "updatedAt": "2026-02-01T20:20:00.000Z"
+    },
+    {
+      "id": "daily-from-log-2026-02-07",
+      "date": "2026-02-07",
+      "title": "Acute GI day",
+      "notes": "Acute GI day. Prednisolone was started around 4:00 AM. Weight reported about 5.4 lb. Home urine test was reported as no infection. Diarrhea began late morning and progressed to watery stool (about four episodes since midnight by next morning). Drooling increased with mild cough, appetite decreased, tremors continued, and evening respiratory rate was 13 breaths per 15 seconds (about 52 per minute). Daily SQ fluids were completed in the evening.",
+      "tags": [
+        "daily-log",
+        "backfilled"
+      ],
+      "createdAt": "2026-02-07T22:30:00.000Z",
+      "updatedAt": "2026-02-08T06:30:00.000Z"
+    },
+    {
+      "id": "daily-from-log-2026-02-08",
+      "date": "2026-02-08",
+      "title": "Early appetite-support discussion overnight included possible tube nutrition due to low intake",
+      "notes": "Early appetite-support discussion overnight included possible tube nutrition due to low intake. By about 10:00 AM, home report described roughly 10% improvement versus the prior day, with slightly better engagement.",
+      "tags": [
+        "daily-log",
+        "backfilled"
+      ],
+      "createdAt": "2026-02-08T10:15:00.000Z",
+      "updatedAt": "2026-02-08T10:30:00.000Z"
+    },
+    {
+      "id": "daily-from-log-2026-02-09",
+      "date": "2026-02-09",
+      "title": "Day 3 steroid good window",
+      "notes": "Day 3 steroid good window. Function improved to about one-week-ago baseline: walking around more, bathroom use, moving between bed and back door, and stronger engagement. Night behavior improved with cuddling/sleeping together. Goal remained to prolong this comfort window.",
+      "tags": [
+        "daily-log",
+        "backfilled"
+      ],
+      "createdAt": "2026-02-09T21:00:00.000Z",
+      "updatedAt": "2026-02-09T21:20:00.000Z"
+    },
+    {
+      "id": "daily-from-log-2026-02-12",
+      "date": "2026-02-12",
+      "title": "Between about 12",
+      "notes": "Between about 12:00 and 1:30 PM, drooling with visible red tint was observed (low intensity, drop-at-a-time). Clinic was contacted and possible ulcer was discussed. Bleeding appeared to stop later that day, and a next-day appointment was arranged. By this period, steroid had been reduced to once daily (home report) while Varenzin-CA1 remained ongoing.",
+      "tags": [
+        "daily-log",
+        "backfilled"
+      ],
+      "createdAt": "2026-02-12T13:45:00.000Z",
+      "updatedAt": "2026-02-12T20:16:00.000Z"
+    },
+    {
+      "id": "daily-from-log-2026-02-15",
+      "date": "2026-02-15",
+      "title": "Interim period Feb 13 to Feb 15 had limited captured detail",
+      "notes": "Interim period Feb 13 to Feb 15 had limited captured detail. Overall status was reported as okay to stable by the next-day context, with no obvious mouth ulcers seen on exam and continued home monitoring.",
+      "tags": [
+        "daily-log",
+        "backfilled"
+      ],
+      "createdAt": "2026-02-15T20:00:00.000Z",
+      "updatedAt": "2026-02-15T20:20:00.000Z"
+    },
+    {
       "id": "daily-2026-02-16-behavior-rr-pattern",
       "date": "2026-02-16",
       "title": "Dash pattern and stress-linked RR spikes",
@@ -86,6 +278,20 @@
       "updatedAt": "2026-02-22T10:00:00.000Z"
     },
     {
+      "id": "daily-2026-02-23-oral-discomfort-intake-stop-onset",
+      "date": "2026-02-23",
+      "title": "Oral discomfort and eating-stop onset",
+      "notes": "This date marked the onset of clear oral discomfort with stopping-eating behavior. Interest in food no longer translated into effective intake, and nutrition became increasingly difficult despite ongoing home support routines.",
+      "tags": [
+        "daily-log",
+        "oral-discomfort",
+        "intake-crisis",
+        "symptom-onset"
+      ],
+      "createdAt": "2026-02-23T16:00:00.000Z",
+      "updatedAt": "2026-02-23T20:00:00.000Z"
+    },
+    {
       "id": "daily-2026-02-24-am-tongue-gum-clarification",
       "date": "2026-02-24",
       "title": "Tongue-use concern with gum-bleeding clarification",
@@ -112,6 +318,20 @@
       ],
       "createdAt": "2026-02-24T12:00:00.000Z",
       "updatedAt": "2026-02-24T13:30:00.000Z"
+    },
+    {
+      "id": "daily-2026-02-25-severe-oral-ulcer-comfort-plan",
+      "date": "2026-02-25",
+      "title": "Severe oral-ulcer pain and comfort-focused planning",
+      "notes": "Around 4 PM, severe mouth discomfort had progressed and ulcers were confirmed. Eating and drinking appeared extremely painful, with only limited water intake. She was mostly physically unresponsive since morning but still reacted to backyard cues. After vet guidance and family discussion, euthanasia was scheduled for the next morning at 10 AM with comfort as top priority.",
+      "tags": [
+        "daily-log",
+        "oral-ulcer",
+        "intake-crisis",
+        "end-of-life"
+      ],
+      "createdAt": "2026-02-25T16:00:00.000Z",
+      "updatedAt": "2026-02-25T16:30:00.000Z"
     }
   ]
 }

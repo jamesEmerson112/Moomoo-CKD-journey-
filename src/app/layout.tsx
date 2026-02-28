@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
 import { ClientErrorMonitor } from "@/components/client-error-monitor";
-import { TopNav } from "@/components/top-nav";
 
 import "./globals.css";
 
@@ -15,8 +14,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body className="font-display">
         <ClientErrorMonitor />
-        <TopNav />
-        <main className="mx-auto w-full max-w-6xl px-4 py-8">{children}</main>
+        <main className="w-full">{children}</main>
       </body>
     </html>
   );

@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import AppCatchallPage from "@/app/app/[...slug]/page";
 import DashboardPage from "@/app/dashboard/page";
+import LabPage from "@/app/lab/page";
 import LoginPage from "@/app/login/page";
 import TimelinePage from "@/app/timeline/page";
 
@@ -44,6 +45,29 @@ describe("read-only redirects", () => {
       })
     ).rejects.toMatchObject({
       digest: expect.stringContaining("/?range=7d")
+    });
+  });
+
+  it("redirects /dashboard?range=all&box=box-02 to /?range=all&box=box-02", async () => {
+    await expect(
+      DashboardPage({
+        searchParams: Promise.resolve({
+          range: "all",
+          box: "box-02"
+        })
+      })
+    ).rejects.toMatchObject({
+      digest: expect.stringContaining("/?range=all&box=box-02")
+    });
+  });
+
+  it("redirects /lab to /", async () => {
+    await expect(
+      LabPage({
+        searchParams: Promise.resolve({})
+      })
+    ).rejects.toMatchObject({
+      digest: expect.stringContaining("/")
     });
   });
 

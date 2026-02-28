@@ -1,32 +1,57 @@
 {
   "logs": [
     {
+      "id": "log-2021-06-01",
+      "date": "2021-06-01",
+      "mode": "quick_text",
+      "notes": "Kittenhood baseline context: recurrent upper-respiratory signs and GI parasite history (Giardia and Cryptosporidium), treated during early life. Historical context entry, not an acute deterioration day.",
+      "createdBy": "CareTeam",
+      "createdAt": "2021-06-01T12:00:00.000Z",
+      "updatedAt": "2021-06-01T12:10:00.000Z"
+    },
+    {
+      "id": "log-2023-07-05",
+      "date": "2023-07-05",
+      "mode": "quick_text",
+      "notes": "Annual baseline. Weight about 8.2 lb, hydrated, and no major vomiting or drinking changes reported. Mild dental disease, congenital digit/nail deformities, and retinal lesions were noted. Platelet clumping comment present on CBC.",
+      "weightLb": 8.2,
+      "createdBy": "CareTeam",
+      "createdAt": "2023-07-05T16:00:00.000Z",
+      "updatedAt": "2023-07-05T16:10:00.000Z"
+    },
+    {
+      "id": "log-2024-06-25",
+      "date": "2024-06-25",
+      "mode": "quick_text",
+      "notes": "Annual follow-up. Urine was documented as inactive, and no major concerns were recorded at this visit.",
+      "createdBy": "CareTeam",
+      "createdAt": "2024-06-25T16:00:00.000Z",
+      "updatedAt": "2024-06-25T16:10:00.000Z"
+    },
+    {
+      "id": "log-2025-09-08",
+      "date": "2025-09-08",
+      "mode": "quick_text",
+      "notes": "Annual exam baseline before crisis period. Weight about 7.8 lb, apparently healthy and hydrated. Congenital findings reiterated, with mild gingivitis documented.",
+      "weightLb": 7.8,
+      "createdBy": "CareTeam",
+      "createdAt": "2025-09-08T16:00:00.000Z",
+      "updatedAt": "2025-09-08T16:10:00.000Z"
+    },
+    {
       "id": "log-2025-12-03",
       "date": "2025-12-03",
       "mode": "quick_text",
-      "notes": "Major renal-proteinuria crisis documented. Albumin about 1.6 and total protein about 4.0 with UPC around 7.9, suggesting protein-losing nephropathy. BUN around 69, creatinine around 2.4, SDMA around 21, phosphorus around 8.1. HCT around 27 and hemoglobin around 8.3. Mild nausea and appetite reduction were reported.",
-      "medications": [
-        {
-          "name": "LRS SQ fluids",
-          "dose": "daily (started soon after)",
-          "taken": true
-        },
-        {
-          "name": "GI support meds",
-          "dose": "omeprazole/sucralfate (historical)",
-          "taken": true
-        }
-      ],
-      "weightLb": 6.9,
+      "notes": "First major crash day in current renal crisis. Trigger included vomiting with plastic noted in vomit or mouth, mild dehydration, and reported grade 3/6 systolic murmur. Labs showed severe protein-loss and renal concern pattern: total protein about 4.0, albumin about 1.6, BUN about 69, creatinine about 2.4, SDMA about 21, phosphorus about 8.1, UPC about 7.9, plus anemia markers (HCT about 27, hemoglobin about 8.3).",
       "createdBy": "CareTeam",
       "createdAt": "2025-12-03T18:00:00.000Z",
-      "updatedAt": "2025-12-03T18:15:00.000Z"
+      "updatedAt": "2025-12-03T18:20:00.000Z"
     },
     {
       "id": "log-2025-12-08",
       "date": "2025-12-08",
       "mode": "quick_text",
-      "notes": "Daily renal support fluids were established: LRS 50 mL SQ with B vitamins and potassium additive per plan. Ongoing concern for nausea, low appetite, and weight loss.",
+      "notes": "Outpatient escalation. Daily SQ fluids were started with labeled home plan: LRS 50 mL under skin each day with B vitamins and 20 mEq KCl additives. Supportive therapies included omeprazole, sucralfate, Mirataz, Clavamox, and iron dextran context. Differential discussion included renal disease with possible pyelonephritis and possible glomerulonephritis.",
       "medications": [
         {
           "name": "LRS SQ fluids (+B vitamins + KCl)",
@@ -34,48 +59,66 @@
           "taken": true
         },
         {
-          "name": "Ondansetron",
-          "dose": "as directed (historical)",
+          "name": "Omeprazole",
+          "dose": "GI support",
+          "taken": true
+        },
+        {
+          "name": "Sucralfate",
+          "dose": "GI mucosal support",
+          "taken": true
+        },
+        {
+          "name": "Mirataz",
+          "dose": "appetite support",
+          "taken": true
+        },
+        {
+          "name": "Clavamox",
+          "dose": "antibiotic course",
+          "taken": true
+        },
+        {
+          "name": "Iron dextran",
+          "dose": "injection support",
           "taken": true
         }
       ],
-      "weightLb": 6.8,
       "createdBy": "CareTeam",
       "createdAt": "2025-12-08T18:00:00.000Z",
-      "updatedAt": "2025-12-08T18:10:00.000Z"
+      "updatedAt": "2025-12-08T18:20:00.000Z"
     },
     {
       "id": "log-2025-12-15",
       "date": "2025-12-15",
       "mode": "quick_text",
-      "notes": "Recheck showed progression with BUN around 72, creatinine around 3.8, and potassium around 6.1. Appetite remained variable with soft stool and ongoing nausea concerns.",
+      "notes": "Recheck showed ongoing decline without clear improvement. Appetite fluctuated with increased drinking, lip-licking, soft stool, stress poops, and persistent murmur. Point-of-care values included BUN about 72, creatinine about 3.8, potassium about 6.1, and chloride about 129. Plan included discussion of gabapentin, ondansetron, and Cerenia for nausea and recommendation for urine culture recheck to evaluate pyelonephritis.",
       "medications": [
-        {
-          "name": "Ondansetron",
-          "dose": "anti-nausea protocol",
-          "taken": true
-        },
-        {
-          "name": "Maropitant (Cerenia)",
-          "dose": "antiemetic protocol",
-          "taken": true
-        },
         {
           "name": "LRS SQ fluids (+B vitamins + KCl)",
           "dose": "50 mL daily",
           "taken": true
+        },
+        {
+          "name": "Ondansetron",
+          "dose": "nausea protocol",
+          "taken": true
+        },
+        {
+          "name": "Maropitant (Cerenia)",
+          "dose": "nausea protocol",
+          "taken": true
         }
       ],
-      "weightLb": 6.7,
       "createdBy": "CareTeam",
       "createdAt": "2025-12-15T18:00:00.000Z",
-      "updatedAt": "2025-12-15T18:10:00.000Z"
+      "updatedAt": "2025-12-15T18:20:00.000Z"
     },
     {
       "id": "log-2025-12-24",
       "date": "2025-12-24",
       "mode": "quick_text",
-      "notes": "Follow-up anchor point around 6.5 lb. FeLV/FIV negative and T4 around 1.2 in prior workup period. Continued renal decline pattern with low appetite and fatigue episodes.",
+      "notes": "Recheck anchor: appetite improved relative to prior visit, herpes flare noted, diarrhea resolved, and murmur still present. Weight about 6.5 lb. Infectious and endocrine anchors in this period included FeLV/FIV negative and T4 about 1.2.",
       "medications": [
         {
           "name": "LRS SQ fluids (+B vitamins + KCl)",
@@ -91,40 +134,45 @@
       "weightLb": 6.5,
       "createdBy": "CareTeam",
       "createdAt": "2025-12-24T18:00:00.000Z",
-      "updatedAt": "2025-12-24T18:10:00.000Z"
+      "updatedAt": "2025-12-24T18:15:00.000Z"
     },
     {
       "id": "log-2026-01-16",
       "date": "2026-01-16",
       "mode": "quick_text",
-      "notes": "Major deterioration documented. Weight near 5.8 lb. CBC severe anemia pattern with HCT about 17 and poor regeneration suspicion. Albumin about 1.8, BUN about 110, creatinine about 5.6, phosphorus about 10.7, SDMA about 26. Clinical signs included low appetite, lethargy, nausea risk, and cachexia progression.",
+      "notes": "Marked January decline. Weight about 5.8 lb with very low body condition, pale gums, and lethargic or weak behavior. UA showed poor concentrating ability (USG about 1.022), heavy protein (300+), and granular/waxy casts. CBC showed severe anemia pattern (HCT about 17, hemoglobin about 5.2, RBC about 3.2) with poor regenerative response concern. Chemistry remained severe: albumin about 1.8, BUN about 110, creatinine about 5.6, SDMA about 26, phosphorus about 10.7.",
       "medications": [
+        {
+          "name": "Varenzin-CA1 (molidustat)",
+          "dose": "0.6 mL daily for 28 days",
+          "taken": true
+        },
         {
           "name": "LRS SQ fluids (+B vitamins + KCl)",
           "dose": "50 mL daily",
           "taken": true
         },
         {
-          "name": "Antiemetics",
-          "dose": "ondansetron/cerenia as directed",
+          "name": "Epakitin + renal diet",
+          "dose": "ongoing",
           "taken": true
         },
         {
-          "name": "Epakitin",
-          "dose": "binder support",
+          "name": "Iron dextran",
+          "dose": "supportive context",
           "taken": true
         }
       ],
       "weightLb": 5.8,
       "createdBy": "CareTeam",
       "createdAt": "2026-01-16T18:00:00.000Z",
-      "updatedAt": "2026-01-16T18:20:00.000Z"
+      "updatedAt": "2026-01-16T18:25:00.000Z"
     },
     {
       "id": "log-2026-01-31",
       "date": "2026-01-31",
       "mode": "quick_text",
-      "notes": "ER anchor: BUN 121, creatinine 5.6, phosphorus over 15, albumin 1.6, PCV/HCT around 14. Exam described very thin body condition, mild dehydration, murmur with gallop rhythm, and GI fragility. Severe kidney dysfunction and anemia remained central concerns.",
+      "notes": "ER visit anchor. Home concern was labored breathing, though breathing was not labored on exam and lungs were clear on auscultation. Exam showed very thin condition (about 5.5 lb), mild dehydration, murmur plus gallop rhythm, slightly doughy intestines, and small bladder. Bloodwork remained severe: BUN 121, creatinine 5.6, phosphorus over 15, albumin 1.6, and PCV/HCT about 14. Transfusion was discussed but not performed; referral and guarded prognosis were documented.",
       "medications": [
         {
           "name": "LRS SQ fluids (+B vitamins + KCl)",
@@ -132,152 +180,104 @@
           "taken": true
         },
         {
-          "name": "Phosphate binder",
+          "name": "Phosphate binder + renal diet",
           "dose": "ongoing",
           "taken": true
         },
         {
-          "name": "Antiemetics",
-          "dose": "ondansetron/cerenia",
+          "name": "Ondansetron / Cerenia",
+          "dose": "as directed",
           "taken": true
         }
       ],
       "weightLb": 5.5,
       "createdBy": "CareTeam",
       "createdAt": "2026-01-31T20:00:00.000Z",
-      "updatedAt": "2026-01-31T20:15:00.000Z"
+      "updatedAt": "2026-01-31T20:20:00.000Z"
     },
     {
       "id": "log-2026-02-01",
       "date": "2026-02-01",
       "mode": "quick_text",
-      "notes": "Home treatment phase intensified with prednisolone start and molidustat anemia support. Appetite remained fragile with intermittent nausea and low energy, but a short comfort window was anticipated with combined symptom control.",
+      "notes": "Baseline specialist-style snapshot: rapidly progressive renal dysfunction with severe protein loss (UPC about 7.9), hypoalbuminemia (about 1.6 to 1.8), severe anemia (PCV/HCT about 14), and hyperphosphatemia (over 15). Cardiac context included murmur plus gallop rhythm. Support plan documented daily SQ fluids, antiemetics, phosphate binder/renal diet, and Varenzin-CA1 trial for anemia.",
       "medications": [
         {
-          "name": "Prednisolone",
-          "dose": "0.15 mL (20 mg/mL)",
-          "taken": true
-        },
-        {
           "name": "Ondansetron",
-          "dose": "2 mg",
+          "dose": "anti-nausea protocol",
           "taken": true
         },
         {
           "name": "Maropitant (Cerenia)",
-          "dose": "4 mg",
+          "dose": "antiemetic protocol",
           "taken": true
         },
         {
           "name": "Varenzin-CA1 (molidustat)",
-          "dose": "0.6 mL (15 mg)",
+          "dose": "0.6 mL daily trial",
           "taken": true
         },
         {
           "name": "Epakitin",
-          "dose": "1 scoop",
+          "dose": "binder support with renal diet",
           "taken": true
         },
         {
           "name": "LRS SQ fluids (+B vitamins + KCl)",
-          "dose": "50 mL",
+          "dose": "50 mL daily",
           "taken": true
         }
       ],
-      "weightLb": 5.45,
       "createdBy": "CareTeam",
       "createdAt": "2026-02-01T20:00:00.000Z",
       "updatedAt": "2026-02-01T20:20:00.000Z"
     },
     {
-      "id": "log-2026-02-03",
-      "date": "2026-02-03",
+      "id": "log-2026-02-07",
+      "date": "2026-02-07",
       "mode": "quick_text",
-      "notes": "Early steroid-course period had watery diarrhea and nausea fluctuations. Appetite stayed low, energy was low, and hydration support remained essential. Urine testing around this window reportedly showed no infection.",
+      "notes": "Acute GI day. Prednisolone was started around 4:00 AM. Weight reported about 5.4 lb. Home urine test was reported as no infection. Diarrhea began late morning and progressed to watery stool (about four episodes since midnight by next morning). Drooling increased with mild cough, appetite decreased, tremors continued, and evening respiratory rate was 13 breaths per 15 seconds (about 52 per minute). Daily SQ fluids were completed in the evening.",
       "medications": [
         {
           "name": "Prednisolone",
-          "dose": "0.15 mL (20 mg/mL)",
+          "dose": "0.15 mL q12h (20 mg/mL)",
           "taken": true
         },
         {
           "name": "Ondansetron",
-          "dose": "2 mg",
+          "dose": "2 mg q12h (last prior dose around 8 PM)",
           "taken": true
         },
         {
           "name": "Maropitant (Cerenia)",
-          "dose": "4 mg",
+          "dose": "4 mg daily (last prior dose around 8 PM)",
           "taken": true
         },
         {
           "name": "Varenzin-CA1 (molidustat)",
-          "dose": "0.6 mL (15 mg)",
+          "dose": "0.6 mL daily (last prior dose around 7 PM)",
           "taken": true
         },
         {
           "name": "Epakitin",
-          "dose": "1 scoop",
+          "dose": "1 scoop BID with food (intake poor that day)",
           "taken": true
         },
         {
           "name": "LRS SQ fluids (+B vitamins + KCl)",
-          "dose": "50 mL",
+          "dose": "50 mL daily",
           "taken": true
         }
       ],
       "weightLb": 5.4,
       "createdBy": "CareTeam",
-      "createdAt": "2026-02-03T20:00:00.000Z",
-      "updatedAt": "2026-02-03T20:12:00.000Z"
-    },
-    {
-      "id": "log-2026-02-05",
-      "date": "2026-02-05",
-      "mode": "quick_text",
-      "notes": "Comfort window observed with better walking, improved social behavior, and increased cuddling overnight. Appetite still reduced compared with baseline, with ongoing fatigue and nausea risk.",
-      "medications": [
-        {
-          "name": "Prednisolone",
-          "dose": "0.15 mL (20 mg/mL)",
-          "taken": true
-        },
-        {
-          "name": "Ondansetron",
-          "dose": "2 mg",
-          "taken": true
-        },
-        {
-          "name": "Maropitant (Cerenia)",
-          "dose": "4 mg",
-          "taken": true
-        },
-        {
-          "name": "Varenzin-CA1 (molidustat)",
-          "dose": "0.6 mL (15 mg)",
-          "taken": true
-        },
-        {
-          "name": "Epakitin",
-          "dose": "1 scoop",
-          "taken": true
-        },
-        {
-          "name": "LRS SQ fluids (+B vitamins + KCl)",
-          "dose": "50 mL",
-          "taken": true
-        }
-      ],
-      "weightLb": 5.42,
-      "createdBy": "CareTeam",
-      "createdAt": "2026-02-05T20:00:00.000Z",
-      "updatedAt": "2026-02-05T20:10:00.000Z"
+      "createdAt": "2026-02-07T22:30:00.000Z",
+      "updatedAt": "2026-02-08T06:30:00.000Z"
     },
     {
       "id": "log-2026-02-08",
       "date": "2026-02-08",
       "mode": "quick_text",
-      "notes": "Behavior pattern included dashing to water and litter with stress-driven respiratory spikes after handling. During quiet rest windows respiratory effort eased. Appetite remained low and lethargy was intermittent.",
+      "notes": "Early appetite-support discussion overnight included possible tube nutrition due to low intake. By about 10:00 AM, home report described roughly 10% improvement versus the prior day, with slightly better engagement.",
       "medications": [
         {
           "name": "Prednisolone",
@@ -306,24 +306,23 @@
         },
         {
           "name": "LRS SQ fluids (+B vitamins + KCl)",
-          "dose": "50 mL",
+          "dose": "50 mL daily",
           "taken": true
         }
       ],
-      "weightLb": 5.46,
       "createdBy": "CareTeam",
-      "createdAt": "2026-02-08T20:00:00.000Z",
-      "updatedAt": "2026-02-08T20:10:00.000Z"
+      "createdAt": "2026-02-08T10:15:00.000Z",
+      "updatedAt": "2026-02-08T10:30:00.000Z"
     },
     {
-      "id": "log-2026-02-10",
-      "date": "2026-02-10",
+      "id": "log-2026-02-09",
+      "date": "2026-02-09",
       "mode": "quick_text",
-      "notes": "Sleep respiratory rate often normalized in better windows, while awake stress could still trigger higher rates. GI signs remained mixed with low appetite and mild nausea episodes.",
+      "notes": "Day 3 steroid good window. Function improved to about one-week-ago baseline: walking around more, bathroom use, moving between bed and back door, and stronger engagement. Night behavior improved with cuddling/sleeping together. Goal remained to prolong this comfort window.",
       "medications": [
         {
           "name": "Prednisolone",
-          "dose": "0.15 mL (20 mg/mL)",
+          "dose": "0.15 mL q12h (20 mg/mL)",
           "taken": true
         },
         {
@@ -348,24 +347,23 @@
         },
         {
           "name": "LRS SQ fluids (+B vitamins + KCl)",
-          "dose": "50 mL",
+          "dose": "50 mL daily",
           "taken": true
         }
       ],
-      "weightLb": 5.5,
       "createdBy": "CareTeam",
-      "createdAt": "2026-02-10T20:00:00.000Z",
-      "updatedAt": "2026-02-10T20:10:00.000Z"
+      "createdAt": "2026-02-09T21:00:00.000Z",
+      "updatedAt": "2026-02-09T21:20:00.000Z"
     },
     {
       "id": "log-2026-02-12",
       "date": "2026-02-12",
       "mode": "quick_text",
-      "notes": "Blood-tinged saliva episode observed with concern for oral discomfort. Nausea signals and drool appeared intermittently. Appetite remained low and chewing tolerance looked reduced.",
+      "notes": "Between about 12:00 and 1:30 PM, drooling with visible red tint was observed (low intensity, drop-at-a-time). Clinic was contacted and possible ulcer was discussed. Bleeding appeared to stop later that day, and a next-day appointment was arranged. By this period, steroid had been reduced to once daily (home report) while Varenzin-CA1 remained ongoing.",
       "medications": [
         {
           "name": "Prednisolone",
-          "dose": "0.15 mL (20 mg/mL)",
+          "dose": "0.15 mL once daily (20 mg/mL)",
           "taken": true
         },
         {
@@ -390,14 +388,54 @@
         },
         {
           "name": "LRS SQ fluids (+B vitamins + KCl)",
-          "dose": "50 mL",
+          "dose": "50 mL daily",
           "taken": true
         }
       ],
-      "weightLb": 5.55,
       "createdBy": "CareTeam",
-      "createdAt": "2026-02-12T20:00:00.000Z",
+      "createdAt": "2026-02-12T13:45:00.000Z",
       "updatedAt": "2026-02-12T20:16:00.000Z"
+    },
+    {
+      "id": "log-2026-02-15",
+      "date": "2026-02-15",
+      "mode": "quick_text",
+      "notes": "Interim period Feb 13 to Feb 15 had limited captured detail. Overall status was reported as okay to stable by the next-day context, with no obvious mouth ulcers seen on exam and continued home monitoring.",
+      "medications": [
+        {
+          "name": "Prednisolone",
+          "dose": "once daily (20 mg/mL suspension)",
+          "taken": true
+        },
+        {
+          "name": "Ondansetron",
+          "dose": "2 mg q12h",
+          "taken": true
+        },
+        {
+          "name": "Maropitant (Cerenia)",
+          "dose": "4 mg daily",
+          "taken": true
+        },
+        {
+          "name": "Varenzin-CA1 (molidustat)",
+          "dose": "0.6 mL daily",
+          "taken": true
+        },
+        {
+          "name": "Epakitin",
+          "dose": "1 scoop BID with food as tolerated",
+          "taken": true
+        },
+        {
+          "name": "LRS SQ fluids (+B vitamins + KCl)",
+          "dose": "50 mL daily",
+          "taken": true
+        }
+      ],
+      "createdBy": "CareTeam",
+      "createdAt": "2026-02-15T20:00:00.000Z",
+      "updatedAt": "2026-02-15T20:20:00.000Z"
     },
     {
       "id": "log-2026-02-16",
@@ -529,7 +567,7 @@
       "id": "log-2026-02-23",
       "date": "2026-02-23",
       "mode": "quick_text",
-      "notes": "Low appetite and low energy continued with intermittent nausea. Respiratory spikes remained mostly stress-associated while resting periods were calmer. Hydration support and binder remained consistent.",
+      "notes": "Oral discomfort and active eating-stop behavior began on this date. Appetite dropped sharply with low energy and intermittent nausea, and food interest no longer translated into effective intake. Respiratory spikes remained mostly stress-associated while resting periods were calmer. Hydration support and binder remained consistent.",
       "medications": [
         {
           "name": "Prednisolone",
@@ -608,6 +646,16 @@
       "createdBy": "CareTeam",
       "createdAt": "2026-02-24T20:00:00.000Z",
       "updatedAt": "2026-02-24T22:00:00.000Z"
+    },
+    {
+      "id": "log-2026-02-25",
+      "date": "2026-02-25",
+      "mode": "quick_text",
+      "notes": "Around 4 PM update: severe oral discomfort progressed and oral ulcers were confirmed. Eating and drinking appeared extremely painful, and intake remained very poor despite some water consumption. Since morning, she was described as mostly physically unresponsive but still reacted to backyard cues. After veterinary guidance and family review, euthanasia was planned for the next morning at 10 AM with focus on comfort.",
+      "weightLb": 5,
+      "createdBy": "CareTeam",
+      "createdAt": "2026-02-25T16:00:00.000Z",
+      "updatedAt": "2026-02-25T16:20:00.000Z"
     }
   ]
 }

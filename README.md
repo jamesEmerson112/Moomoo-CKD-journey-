@@ -5,10 +5,11 @@ Public, read-only monitoring website for Momoo's CKD journey using a content-as-
 ## What this implements
 
 - Single-page public quick view at `/`
+- Visual-first desktop dashboard shell with left log thread and right inspector
 - Deterministic NLP issue extraction from text notes
 - 7-day recent-issues list and stacked issue trend chart
 - Soft alert computation from thresholds
-- Unified chronology stream (clinical events + milestone logs + daily life)
+- Text-log deep-link selection via `?selected=<thread-id>`
 - RAG-ready context events feed
 - Strict content validation during build
 
@@ -18,6 +19,17 @@ Public, read-only monitoring website for Momoo's CKD journey using a content-as-
 - UI: Tailwind CSS + Recharts
 - Data source: repository JSON content files (no DB/auth runtime)
 - Validation: Zod schemas
+
+## Component taxonomy
+
+Active dashboard UI is organized under `src/components/dashboard`:
+
+- `dashboard-shell/`: shell/header/range controls
+- `board/`: mainboard orchestration (`MainboardGrid`)
+- `boxes/`: one folder per board box (`box-01` through `box-10`)
+- `boxes/shared/`: shared primitives for box composition
+
+Legacy, non-active components are isolated under `src/components/legacy`.
 
 ## Canonical content files
 
@@ -31,11 +43,24 @@ All runtime reads derive from those files.
 
 ## App routes
 
-- `/` canonical one-page quick view (`?range=7d|30d|90d`)
-- `/dashboard` redirects to `/` (preserves valid `range`)
+- `/` canonical lab workbench page (`?range=all|7d|30d|90d`, optional `box=`)
+- `/lab` redirects to `/` (preserves valid `range`/`box`)
+- `/dashboard` redirects to `/` (preserves valid `range`/`box`)
 - `/timeline` redirects to `/`
 - `/login` redirects to `/?notice=read-only`
 - `/app/*` redirects to `/?notice=read-only`
+
+### Workbench boxes on `/`
+
+- `box-01` Weight trend only (single merged line) with healthy reference line at `8 lb`
+- `box-02` Higher-is-worse clinical metrics line chart:
+  - `bun`, `creatinine`, `sdma`, `phosphorus`, `upc`, `potassium`, `t4`
+- `box-03` Lower-is-worse clinical metrics line chart:
+  - `albumin`, `hct`, `hemoglobin`, `pcv`, `total-protein`
+- Severity model:
+  - `creatinine` and `sdma`: IRIS-aligned staged mapping
+  - other metrics: relative percentile zone mapping
+- Sparse ranges render assumed healthy baseline lines (zone `0`) plus measured clinical points
 
 ## API routes
 
@@ -96,5 +121,5 @@ If any content entry violates schema/business rules, `content:validate` (and the
 - Data is intentionally public-readable.
 - Snippets in issue insights are public in this read-only model.
 - Clinical events include structured measurements with comparator/confidence metadata for charting.
-- Top navigation uses in-page anchors (`#status`, `#issues`, `#events`, `#timeline`) for quick jumps.
+- Dashboard is desktop-first with basic small-screen fallback.
 - Dashboard is informational only and not medical advice.
