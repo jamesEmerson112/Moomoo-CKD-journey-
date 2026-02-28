@@ -1,4 +1,11 @@
 import type { IssueInsights } from "@/lib/contracts";
+import {
+  NLP_MAX_PHRASE_TOKENS,
+  NLP_NEGATION_WINDOW,
+  NLP_SNIPPET_AFTER_CHARS,
+  NLP_SNIPPET_BEFORE_CHARS,
+  NLP_SNIPPET_FALLBACK_LENGTH
+} from "@/lib/constants";
 
 const NEGATION_TOKENS = new Set(["no", "not", "without", "denies", "none"]);
 
@@ -73,7 +80,7 @@ function tokenize(input: string): string[] {
 }
 
 function hasNegationBefore(tokens: string[], startIndex: number): boolean {
-  const from = Math.max(0, startIndex - 3);
+  const from = Math.max(0, startIndex - NLP_NEGATION_WINDOW);
   for (let index = from; index < startIndex; index += 1) {
     if (NEGATION_TOKENS.has(tokens[index])) {
       return true;
@@ -113,11 +120,11 @@ function snippetAround(notes: string, phrase: string): string | null {
   const tokenIndex = lower.indexOf(firstToken);
 
   if (tokenIndex < 0) {
-    return notes.replace(/\s+/g, " ").trim().slice(0, 140) || null;
+    return notes.replace(/\s+/g, " ").trim().slice(0, NLP_SNIPPET_FALLBACK_LENGTH) || null;
   }
 
-  const from = Math.max(0, tokenIndex - 40);
-  const to = Math.min(notes.length, tokenIndex + 100);
+  const from = Math.max(0, tokenIndex - NLP_SNIPPET_BEFORE_CHARS);
+  const to = Math.min(notes.length, tokenIndex + NLP_SNIPPET_AFTER_CHARS);
   return notes
     .slice(from, to)
     .replace(/\s+/g, " ")
@@ -140,7 +147,7 @@ export function extractIssueMentionsFromText(
   while (index < tokens.length) {
     let matched = false;
 
-    for (let len = 3; len >= 1; len -= 1) {
+    for (let len = NLP_MAX_PHRASE_TOKENS; len >= 1; len -= 1) {
       if (index + len > tokens.length) {
         continue;
       }

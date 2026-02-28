@@ -9,6 +9,52 @@ import { GET as getDailyLife } from "@/app/api/public/daily-life/route";
 import { GET as getPublicDashboard } from "@/app/api/public/dashboard/route";
 import { GET as getPublicLogs } from "@/app/api/public/logs/route";
 
+describe("API validation returns 400 on invalid input", () => {
+  it("returns 400 for invalid dashboard range", async () => {
+    const req = new NextRequest("http://localhost:3000/api/public/dashboard?range=invalid");
+    const response = await getPublicDashboard(req);
+    expect(response.status).toBe(400);
+    const body = (await response.json()) as { error: string };
+    expect(body.error).toBe("Invalid query parameters");
+  });
+
+  it("returns 400 for malformed date in logs", async () => {
+    const req = new NextRequest("http://localhost:3000/api/public/logs?from=not-a-date");
+    const response = await getPublicLogs(req);
+    expect(response.status).toBe(400);
+  });
+
+  it("returns 400 for malformed date in clinical events", async () => {
+    const req = new NextRequest("http://localhost:3000/api/public/clinical-events?from=bad");
+    const response = await getClinicalEvents(req);
+    expect(response.status).toBe(400);
+  });
+
+  it("returns 400 for malformed date in daily life", async () => {
+    const req = new NextRequest("http://localhost:3000/api/public/daily-life?from=bad");
+    const response = await getDailyLife(req);
+    expect(response.status).toBe(400);
+  });
+
+  it("returns 400 for invalid limit in recent issues", async () => {
+    const req = new NextRequest("http://localhost:3000/api/issues/recent?limit=-5");
+    const response = await getRecentIssues(req);
+    expect(response.status).toBe(400);
+  });
+
+  it("ignores unknown query params since only known keys are extracted", async () => {
+    const req = new NextRequest("http://localhost:3000/api/public/logs?from=2026-01-01&bogus=yes");
+    const response = await getPublicLogs(req);
+    expect(response.status).toBe(200);
+  });
+
+  it("returns 400 for malformed date in context events", async () => {
+    const req = new NextRequest("http://localhost:3000/api/context/events?from=xyz");
+    const response = await getContextEvents(req);
+    expect(response.status).toBe(400);
+  });
+});
+
 describe("read-only API routes", () => {
   it("returns public dashboard payload with issue insights", async () => {
     const req = new NextRequest("http://localhost:3000/api/public/dashboard?range=7d");

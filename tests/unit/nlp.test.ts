@@ -46,6 +46,55 @@ describe("NLP extraction", () => {
   });
 });
 
+describe("NLP edge cases", () => {
+  const terms = [
+    {
+      id: "t1",
+      issueKey: "vomiting",
+      label: "Vomiting",
+      phrase: "vomiting",
+      normalizedPhrase: normalizePhrase("vomiting"),
+      weight: 1.5
+    }
+  ];
+
+  it("returns empty for empty string", () => {
+    expect(extractIssueMentionsFromText("", terms)).toEqual([]);
+  });
+
+  it("returns empty for whitespace-only string", () => {
+    expect(extractIssueMentionsFromText("   \n\t  ", terms)).toEqual([]);
+  });
+
+  it("returns empty when all matches are negated", () => {
+    expect(extractIssueMentionsFromText("no vomiting today", terms)).toEqual([]);
+    expect(extractIssueMentionsFromText("not vomiting at all", terms)).toEqual([]);
+    expect(extractIssueMentionsFromText("denies vomiting", terms)).toEqual([]);
+  });
+
+  it("produces snippet from notes shorter than context window", () => {
+    const results = extractIssueMentionsFromText("vomiting", terms);
+    expect(results).toHaveLength(1);
+    expect(results[0]?.evidenceSnippet).toBe("vomiting");
+  });
+
+  it("returns fallback snippet when phrase token not found in original casing", () => {
+    const unicodeTerms = [
+      {
+        id: "t-special",
+        issueKey: "test-issue",
+        label: "Test Issue",
+        phrase: "café pain",
+        normalizedPhrase: normalizePhrase("café pain"),
+        weight: 1
+      }
+    ];
+    const results = extractIssueMentionsFromText("Had café pain this morning after food", unicodeTerms);
+    expect(results).toHaveLength(1);
+    expect(results[0]?.evidenceSnippet).toBeTruthy();
+  });
+});
+
 describe("issue insight aggregation", () => {
   it("ranks by weighted score then date and masks snippets for public", () => {
     const insights = aggregateIssueInsights(

@@ -340,6 +340,86 @@ describe("mainboard derivation helpers", () => {
   });
 });
 
+describe("derive edge cases", () => {
+  it("returns all-zero burden indexes when no issue mentions exist", () => {
+    const logs = [
+      makeLog({ id: "quiet-1", date: "2026-02-22", notes: "rested all day" }),
+      makeLog({ id: "quiet-2", date: "2026-02-23", notes: "normal behavior" })
+    ];
+
+    const series = deriveDailyBurdenSeries({
+      logs,
+      lexiconTerms: LEXICON,
+      days: 7,
+      anchorDate: ANCHOR_DATE
+    });
+
+    expect(series).toHaveLength(7);
+    expect(series.every((point) => point.index === 0)).toBe(true);
+    expect(series.every((point) => point.rawScore === 0)).toBe(true);
+  });
+
+  it("returns zero burden window when no issue mentions exist", () => {
+    const logs = [makeLog({ id: "quiet-3", date: "2026-02-22", notes: "everything fine" })];
+
+    const window = deriveBurdenWindow({
+      logs,
+      lexiconTerms: LEXICON,
+      days: 7,
+      anchorDate: ANCHOR_DATE
+    });
+
+    expect(window.rawScore).toBe(0);
+    expect(window.index).toBe(0);
+  });
+
+  it("deduplicates hybrid alerts keeping only latest per trigger", () => {
+    const logs = [
+      makeLog({
+        id: "dup-1",
+        date: "2026-02-20",
+        notes: "faint blood on lip and oral discomfort"
+      }),
+      makeLog({
+        id: "dup-2",
+        date: "2026-02-24",
+        notes: "blood on lip area persisted"
+      })
+    ];
+
+    const alerts = deriveHybridAlertsFromNotes({
+      logs,
+      lexiconTerms: LEXICON,
+      days: 7,
+      anchorDate: ANCHOR_DATE
+    });
+
+    const oralBleedingAlerts = alerts.filter((a) => a.triggerId === "oral_bleeding");
+    expect(oralBleedingAlerts.length).toBeLessThanOrEqual(1);
+    if (oralBleedingAlerts.length === 1) {
+      expect(oralBleedingAlerts[0]?.date).toBe("2026-02-24");
+    }
+  });
+
+  it("handles weight delta with no weight data gracefully", () => {
+    const logs = [
+      makeLog({ id: "nw-1", date: "2026-02-22", notes: "no weight today" }),
+      makeLog({ id: "nw-2", date: "2026-02-24", notes: "still no weight" })
+    ];
+
+    const delta = deriveWeightDelta({
+      logs,
+      days: 7,
+      anchorDate: ANCHOR_DATE
+    });
+
+    expect(delta.latestWeightLb).toBeNull();
+    expect(delta.baselineWeightLb).toBeNull();
+    expect(delta.deltaLb).toBeNull();
+    expect(delta.deltaPct).toBeNull();
+  });
+});
+
 describe("mainboard payload", () => {
   it("returns text-first payload contracts for mainboard boxes", async () => {
     const payload = await getMainboardPayload("30d");

@@ -30,12 +30,15 @@ function isWorkbenchBoxId(value: string | null | undefined): value is WorkbenchB
   if (!value) {
     return false;
   }
-  return WORKBENCH_BOX_IDS.includes(value as WorkbenchBoxId);
+  return (WORKBENCH_BOX_IDS as ReadonlyArray<string>).includes(value);
 }
 
 function resolveWorkbenchBoxId(value: string | null | undefined): WorkbenchBoxId {
   if (isWorkbenchBoxId(value)) {
     return value;
+  }
+  if (value != null) {
+    console.warn(`[workbench] Invalid box "${value}", falling back to "box-01"`);
   }
   return "box-01";
 }
@@ -47,6 +50,9 @@ function isLabWorkbenchRange(value: string | null | undefined): value is LabWork
 function resolveLabWorkbenchRange(value: string | null | undefined): LabWorkbenchRange {
   if (isLabWorkbenchRange(value)) {
     return value;
+  }
+  if (value != null) {
+    console.warn(`[workbench] Invalid range "${value}", falling back to "all"`);
   }
   return "all";
 }

@@ -16,7 +16,7 @@ export function KpiCardBase({ boxId, label, value, detail, badge }: KpiCardBaseP
       <p className="card-label">{label}</p>
       <p className="card-value">{value}</p>
       {detail ? <p className="card-detail">{detail}</p> : null}
-      <span className="card-badge">{badge}</span>
+      <span className="card-badge" aria-label={`Data source: ${badge}`}>{badge}</span>
     </article>
   );
 }

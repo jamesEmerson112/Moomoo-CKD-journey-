@@ -103,7 +103,7 @@ export function Box01FullwidthZoneChart({ payload }: Box01FullwidthZoneChartProp
             <Line
               type="linear"
               dataKey="weightLb"
-              connectNulls={false}
+              connectNulls={true}
               stroke="#1d4ed8"
               strokeWidth={2}
               dot={{ r: 2.8, stroke: "#ffffff", strokeWidth: 1 }}

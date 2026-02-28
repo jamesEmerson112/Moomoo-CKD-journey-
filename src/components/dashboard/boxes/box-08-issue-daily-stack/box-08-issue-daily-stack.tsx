@@ -3,6 +3,7 @@
 import React from "react";
 import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
+import { ChartErrorBoundary } from "@/components/dashboard/boxes/shared/chart-error-boundary";
 import type { IssueWeightedRankItem, IssueWeightedSeriesPoint } from "@/lib/contracts";
 
 interface Box08IssueDailyStackProps {
@@ -38,35 +39,37 @@ export function Box08IssueDailyStack({ issueRank, series }: Box08IssueDailyStack
   return (
     <section id="issue-card" data-box-id="box-08" className="panel board-box board-chart-box" aria-label="Issue trend chart">
       <h2 className="board-heading">Issue Daily Stack</h2>
-      <div className="chart-slot">
-        <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={chartData} margin={{ top: 4, right: 4, left: -8, bottom: 0 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#dbe2ec" />
-            <XAxis dataKey="date" tick={{ fill: "#64748b", fontSize: 9 }} tickMargin={4} minTickGap={16} />
-            <YAxis allowDecimals={false} tick={{ fill: "#64748b", fontSize: 9 }} width={28} />
-            <Tooltip
-              contentStyle={{
-                backgroundColor: "#ffffff",
-                borderColor: "#cbd5e1",
-                borderRadius: "0.5rem",
-                fontSize: "0.72rem",
-                padding: "0.35rem 0.45rem"
-              }}
-            />
-            <Legend wrapperStyle={{ fontSize: 10, paddingTop: 2 }} iconSize={7} height={18} />
-            {issueKeys.map((key, index) => (
-              <Bar
-                key={key}
-                dataKey={key}
-                stackId="issues"
-                fill={ISSUE_COLORS[index % ISSUE_COLORS.length]}
-                name={labelByKey.get(key) ?? key}
-                radius={[3, 3, 0, 0]}
+      <ChartErrorBoundary boxId="box-08">
+        <div className="chart-slot" role="img" aria-label="Stacked bar chart showing daily issue mention scores by category">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={chartData} margin={{ top: 4, right: 4, left: -8, bottom: 0 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke="#dbe2ec" />
+              <XAxis dataKey="date" tick={{ fill: "#64748b", fontSize: 9 }} tickMargin={4} minTickGap={16} />
+              <YAxis allowDecimals={false} tick={{ fill: "#64748b", fontSize: 9 }} width={28} />
+              <Tooltip
+                contentStyle={{
+                  backgroundColor: "#ffffff",
+                  borderColor: "#cbd5e1",
+                  borderRadius: "0.5rem",
+                  fontSize: "0.72rem",
+                  padding: "0.35rem 0.45rem"
+                }}
               />
-            ))}
-          </BarChart>
-        </ResponsiveContainer>
-      </div>
+              <Legend wrapperStyle={{ fontSize: 10, paddingTop: 2 }} iconSize={10} height={18} />
+              {issueKeys.map((key, index) => (
+                <Bar
+                  key={key}
+                  dataKey={key}
+                  stackId="issues"
+                  fill={ISSUE_COLORS[index % ISSUE_COLORS.length]}
+                  name={labelByKey.get(key) ?? key}
+                  radius={[3, 3, 0, 0]}
+                />
+              ))}
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+      </ChartErrorBoundary>
     </section>
   );
 }

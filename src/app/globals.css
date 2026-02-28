@@ -1324,6 +1324,32 @@ body {
   [data-box-id="box-10"] {
     grid-column: 1 / -1;
   }
+
+  .chart-slot {
+    min-height: 220px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1079px) {
+  .visual-board-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  [data-box-id="box-01"],
+  [data-box-id="box-02"],
+  [data-box-id="box-03"],
+  [data-box-id="box-04"] {
+    grid-column: span 1;
+  }
+
+  [data-box-id="box-05"],
+  [data-box-id="box-06"],
+  [data-box-id="box-07"],
+  [data-box-id="box-08"],
+  [data-box-id="box-09"],
+  [data-box-id="box-10"] {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 1080px) {

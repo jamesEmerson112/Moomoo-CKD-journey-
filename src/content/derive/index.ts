@@ -1,5 +1,4 @@
 // Public derive surface grouped by domain-specific modules.
-// `internal.ts` remains as the compatibility implementation source during refactor.
 export * from "./logs";
 export * from "./issues";
 export * from "./mainboard";

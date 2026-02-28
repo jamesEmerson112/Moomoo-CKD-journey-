@@ -33,6 +33,7 @@ export function DashboardShell({ range, mainboard, notice }: DashboardShellProps
                     range: item
                   })}
                   className={`range-chip ${range === item ? "range-chip-active" : ""}`}
+                  aria-current={range === item ? "page" : undefined}
                 >
                   {item}
                 </Link>
