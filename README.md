@@ -20,6 +20,19 @@ Public, read-only monitoring website for Momoo's CKD journey using a content-as-
 - Data source: repository JSON content files (no DB/auth runtime)
 - Validation: Zod schemas
 
+### Internal module boundaries
+
+- Data access/use-cases live under `src/lib/data/`:
+  - `content-source.ts`: normalized content loader boundary
+  - `public-read.ts`: read-only API-oriented selectors
+  - `workbench.ts`: `/` lab workbench payload
+  - `mainboard.ts`: 10-box mainboard payload derivation
+  - `quickview.ts`: legacy quick-view/thread composition
+- Compatibility barrel remains at `src/lib/data.ts` (`@/lib/data` import path stays stable).
+- Derive surface is split under `src/content/derive/` by domain:
+  - `logs.ts`, `issues.ts`, `mainboard.ts`, `workbench-weight.ts`, `workbench-clinical.ts`, `shared.ts`
+- Compatibility implementation currently remains in `src/content/derive/internal.ts` and is exported through `src/content/derive/index.ts`.
+
 ## Component taxonomy
 
 Active dashboard UI is organized under `src/components/dashboard`:
@@ -33,7 +46,7 @@ Legacy, non-active components are isolated under `src/components/legacy`.
 
 ## Canonical content files
 
-- `content/logs.json`
+- `content/medical_logs.json`
 - `content/daily-life.json`
 - `content/lexicon.json`
 - `content/thresholds.json`

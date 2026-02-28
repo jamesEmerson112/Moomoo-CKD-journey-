@@ -3,7 +3,7 @@ import { contentFiles, validateContentFiles } from "../src/content/load";
 async function main(): Promise<void> {
   await validateContentFiles();
   console.log("Content validation passed.");
-  console.log(`Validated: ${contentFiles.logs}`);
+  console.log(`Validated: ${contentFiles.medicalLogs}`);
   console.log(`Validated: ${contentFiles.lexicon}`);
   console.log(`Validated: ${contentFiles.thresholds}`);
   console.log(`Validated: ${contentFiles.dailyLife}`);

@@ -24,7 +24,7 @@ import {
 } from "@/content/schema";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
-const LOGS_FILE = path.join(CONTENT_DIR, "logs.json");
+const MEDICAL_LOGS_FILE = path.join(CONTENT_DIR, "medical_logs.json");
 const LEXICON_FILE = path.join(CONTENT_DIR, "lexicon.json");
 const THRESHOLDS_FILE = path.join(CONTENT_DIR, "thresholds.json");
 const DAILY_LIFE_FILE = path.join(CONTENT_DIR, "daily-life.json");
@@ -66,15 +66,15 @@ async function readJson(filePath: string): Promise<unknown> {
 }
 
 async function readRawContent(): Promise<RawContent> {
-  const [rawLogs, rawLexicon, rawThresholds, rawDailyLife, rawClinicalEvents] = await Promise.all([
-    readJson(LOGS_FILE),
+  const [rawMedicalLogs, rawLexicon, rawThresholds, rawDailyLife, rawClinicalEvents] = await Promise.all([
+    readJson(MEDICAL_LOGS_FILE),
     readJson(LEXICON_FILE),
     readJson(THRESHOLDS_FILE),
     readJson(DAILY_LIFE_FILE),
     readJson(CLINICAL_EVENTS_FILE)
   ]);
 
-  const logsFile = contentLogsFileSchema.parse(rawLogs);
+  const logsFile = contentLogsFileSchema.parse(rawMedicalLogs);
   const lexiconFile = contentLexiconFileSchema.parse(rawLexicon);
   const thresholdsFile = contentThresholdsFileSchema.parse(rawThresholds);
   const dailyLifeFile = contentDailyLifeFileSchema.parse(rawDailyLife);
@@ -114,7 +114,8 @@ export async function validateContentFiles(): Promise<void> {
 }
 
 export const contentFiles = {
-  logs: LOGS_FILE,
+  medicalLogs: MEDICAL_LOGS_FILE,
+  logs: MEDICAL_LOGS_FILE,
   lexicon: LEXICON_FILE,
   thresholds: THRESHOLDS_FILE,
   dailyLife: DAILY_LIFE_FILE,

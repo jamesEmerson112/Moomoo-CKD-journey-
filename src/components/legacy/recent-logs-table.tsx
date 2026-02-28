@@ -8,7 +8,7 @@ export function RecentLogsTable({ logs }: RecentLogsTableProps) {
   if (logs.length === 0) {
     return (
       <div className="panel">
-        <p className="text-sm text-slate-300">No logs yet. Add entries to `content/logs.json` to populate this table.</p>
+        <p className="text-sm text-slate-300">No logs yet. Add entries to `content/medical_logs.json` to populate this table.</p>
       </div>
     );
   }
