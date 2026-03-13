@@ -1,3 +1,36 @@
 1. Add multi language support
 2. Add medication regimen model (start/stop periods + dosage changes) instead of per-log repetition.
 3. add more charts
+4. Add symptom burden heatmap box (daily NLP issue intensity)
+5. Add weight vs BUN/creatinine correlation mini-panel box
+   - Layout: two stacked mini-charts in one box (top = Labs, bottom = Weight)
+   - Range: All-time (unlimited)
+   - Top chart metrics: BUN + Creatinine (mg/dL)
+   - Bottom chart metric: Weight (lb)
+   - X-axis: shared timeline/date across both charts
+   - Summary line: "Weight down while BUN/Creatinine up" (observational only)
+   - Tooltip example: date + Weight + BUN + Creatinine raw values
+   - Visualization:
+     +----------------------------------------------------------------------------------+
+     | Box-05: Weight vs BUN/Creatinine Correlation                    Range: All-time  |
+     | Legend:  ● Weight (lb)   ● BUN (mg/dL)   ● Creatinine (mg/dL)                    |
+     | Summary: Weight ↓  |  BUN ↑  |  Creatinine ↑  |  Pattern: inverse (observational) |
+     |                                                                                  |
+     | Labs (mg/dL)  ↑                                                                  |
+     | 130 |                                x BUN                                       |
+     | 110 |                          x BUN                                             |
+     |  90 |                    x BUN                                                   |
+     |  70 |              x BUN                                                         |
+     |   6 |                        o Cr                                                |
+     |   5 |                  o Cr                                                      |
+     |   4 |            o Cr                                                            |
+     |----------------------------------------------------------------------------------|
+     | Wt  | 8.0 o                                                                       |
+     |(lb) | 7.0   o                                                                     |
+     |  ↓  | 6.0      o                                                                  |
+     |     | 5.0         o                                                               |
+     |     +---------------------------------------------------------------------> date  |
+     |        Dec                    Jan                    Feb                    Mar    |
+     |                                                                                  |
+     | Tooltip (point): 2026-01-31 | Weight 5.5 lb | BUN 121 | Creatinine 5.6          |
+     +----------------------------------------------------------------------------------+
